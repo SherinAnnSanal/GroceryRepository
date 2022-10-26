@@ -78,8 +78,8 @@ public class MngExpenseRepositoryPage {
 		gu.getClickElement(MngExpenseMenu);
 		gu.getClickElement(MngExpenseOption);
 
-		String bgColor = gu.stylePropertyValidation(resetBtn, "background-color");
-		return bgColor;
+		String bgColor123 = gu.stylePropertyValidation(resetBtn, "background-color");
+		return bgColor123;
 	}
 
 	/*
