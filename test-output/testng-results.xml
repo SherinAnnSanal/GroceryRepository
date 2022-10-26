@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-25T08:21:28 GST" name="My Testsuite" finished-at="2022-10-25T08:21:55 GST" duration-ms="26662">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" name="checkProfileName" class="testCases.DashBoardTestCase"/>
+      </group> <!-- SmokeTest -->
+    </groups>
+    <test started-at="2022-10-25T08:21:28 GST" name="ChromeTest" finished-at="2022-10-25T08:21:55 GST" duration-ms="26662">
+      <class name="testCases.DashBoardTestCase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:28 GST" name="beforemethod" finished-at="2022-10-25T08:21:37 GST" duration-ms="8935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:37 GST" name="checkColorHomeBtn" finished-at="2022-10-25T08:21:39 GST" duration-ms="1872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkColorHomeBtn -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:39 GST" name="aftermethod" finished-at="2022-10-25T08:21:39 GST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkColorHomeBtn status=SUCCESS method=DashBoardTestCase.checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:39 GST" name="beforemethod" finished-at="2022-10-25T08:21:45 GST" duration-ms="6057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:45 GST" name="checkEnableBar" finished-at="2022-10-25T08:21:47 GST" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnableBar -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:47 GST" name="aftermethod" finished-at="2022-10-25T08:21:47 GST" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkEnableBar status=SUCCESS method=DashBoardTestCase.checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:47 GST" name="beforemethod" finished-at="2022-10-25T08:21:53 GST" duration-ms="6042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:53 GST" name="checkProfileName" finished-at="2022-10-25T08:21:55 GST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkProfileName -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5]" started-at="2022-10-25T08:21:55 GST" name="aftermethod" finished-at="2022-10-25T08:21:55 GST" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkProfileName status=SUCCESS method=DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@3f6b0be5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.DashBoardTestCase -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- My Testsuite -->
+</testng-results>

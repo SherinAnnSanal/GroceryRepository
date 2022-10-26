@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ <!--thread-count is parallel instance no:;parallel= methods or classes-->
+<suite name="Parallel Testing">
+    <test name="My Test100" parallel="methods" thread-count="2">  
+    <parameter name="Browser" value="chrome"></parameter>
+        <classes>
+            <class name="testCases.MngDelvryBoyTestcase">   
+           
+            
+            </class>
+        </classes>
+    </test>
+    </suite>

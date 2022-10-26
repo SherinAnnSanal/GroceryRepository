@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="My Test100(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="testCases.MngDelvryBoyTestcase">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="chkName"/>
+          <include name="chkToolTip"/>
+          <include name="chkBgColor"/>
+        </methods>
+      </class> <!-- testCases.MngDelvryBoyTestcase -->
+    </classes>
+  </test> <!-- My Test100(failed) -->
+</suite> <!-- Failed suite [Parallel Testing] -->
