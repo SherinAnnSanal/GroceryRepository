@@ -21,16 +21,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import utilities.GeneralUtilities;
 
-public class MngExpenseRepositoryPage {
+public class MngExpenseRepo {
 
 	WebDriver driver;
 	public static Properties prop;
 	GeneralUtilities gu = new GeneralUtilities();
 	Robot rob;
 	//WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(20));
-	public MngExpenseRepositoryPage(WebDriver driver) {
+	public MngExpenseRepo(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -62,7 +63,7 @@ public class MngExpenseRepositoryPage {
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement updateBtn;
 	
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']/h5")
+	//@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']/h5")
 	WebElement popupMsg;
 
 	public String getStyleSearchBtn() {
