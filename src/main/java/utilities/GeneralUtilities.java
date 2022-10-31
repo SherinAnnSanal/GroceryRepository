@@ -18,6 +18,11 @@ public class GeneralUtilities {
 		String text = element.getText();
 		return text;
 	}
+	public boolean isDisplay(WebElement element)
+	{
+		boolean status=element.isDisplayed();
+		return status;
+	}
 	
 	
 
@@ -54,10 +59,13 @@ public class GeneralUtilities {
 
 	}
 
-	public String selectFuncbyVisibletext(WebElement element, String visisbletext) {
+	public String selectFuncbyVisibletext(WebElement element, String visibletext) {
 		Select select = new Select(element);
-		select.selectByVisibleText(visisbletext);
+		List <WebElement>dropList=select.getOptions();
+			select.selectByVisibleText(visibletext);
 		WebElement selectedValue = select.getFirstSelectedOption();
+		
+		
 		return (selectedValue.getText());
 
 	}
@@ -84,10 +92,11 @@ public class GeneralUtilities {
 		return element.isSelected();
 	}
 	List<String> list=new ArrayList<>();
-	public List addList(String s)
+	public List<String> addList(String s)
 	{
 		
 		list.add(s);
+	
 		return list;
 	}
 

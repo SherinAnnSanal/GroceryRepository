@@ -2,11 +2,11 @@
 <suite name="My Testsuite">
 	<test name="ChromeTest">
 		<parameter name="Browser" value="chrome"></parameter>
-		<classes>
+	  	<classes>
 		
-			<class name="testCases.MngLocationTestcase">
+			<class name="testCases.MngOrdersTestcase">
 			<methods>
-			<include name="getDelCharge"></include>
+			<include name="chkElementsStatus"></include>
 			</methods>
 			</class>
 		</classes>

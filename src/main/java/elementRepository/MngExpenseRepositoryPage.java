@@ -6,21 +6,16 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.ObjectInputFilter.Config;
-import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import utilities.GeneralUtilities;
 
 public class MngExpenseRepositoryPage {
@@ -29,7 +24,8 @@ public class MngExpenseRepositoryPage {
 	public static Properties prop;
 	GeneralUtilities gu = new GeneralUtilities();
 	Robot rob;
-	//WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(20));
+
+	// WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(20));
 	public MngExpenseRepositoryPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -58,19 +54,22 @@ public class MngExpenseRepositoryPage {
 
 	@FindBy(xpath = "div[class='datepicker-days'] th[class='datepicker-switch']")
 	WebElement monthCalendar;
-	
-	@FindBy(xpath="//button[@type='submit']")
+
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement updateBtn;
-	
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']/h5")
+
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement popupMsg;
+
+	@FindBy(xpath = "//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-orient-left datepicker-orient-bottom']")
+	WebElement calendar;
 
 	public String getStyleSearchBtn() {
 		gu.getClickElement(MngExpenseMenu);
 		gu.getClickElement(MngExpenseOption);
 
 		String fontSize = gu.stylePropertyValidation(searchBtn, "font-size");
-		
+
 		return fontSize;
 	}
 
@@ -101,63 +100,40 @@ public class MngExpenseRepositoryPage {
 	 * }
 	 */
 
-	
-	  public void fileUpload() throws AWTException, IOException {
-	  
-	  //gu.getClickElement(MngExpenseMenu);
-	  //gu.getClickElement(MngExpenseOption);
-	  //gu.getClickElement(editBtn); gu.getClickElement(fileUploadBtn);
-		  rob=new Robot();
-	  MngExpenseMenu.click();
-	  MngExpenseOption.click(); 
-	  editBtn.click();
-	 
-	 // fileUploadBtn.click();
-	 
-	 
-	  Actions ac=new Actions(driver);
-	  ac.moveToElement(fileUploadBtn).click().perform();
-	  prop = new Properties();
-		FileInputStream fileIO = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\resources\\Properties\\Config.properties");
-		
-		prop.load(fileIO);
-		String path=System.getProperty("user.dir") + prop.getProperty("imgPath");
-	  StringSelection ss=new StringSelection(path);
-	  System.out.println(path);
-	  System.out.println(ss);
-	 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-	 rob.delay(300); 
-	  rob.keyPress(KeyEvent.VK_CONTROL);
-	  rob.keyPress(KeyEvent.VK_V);
-	  rob.keyRelease(KeyEvent.VK_V);
-	  rob.keyRelease(KeyEvent.VK_CONTROL);
-	  rob.delay(300);
-	  rob.keyPress(KeyEvent.VK_ENTER);
-	  rob.keyRelease(KeyEvent.VK_ENTER);
-	  //gu.getClickElement(updateBtn);
-	ac.moveToElement(updateBtn).click().perform();
-	rob.delay(500);
-	//w.until((ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='alert alert-success alert-dismissible']/h5"))));
-	System.out.println(popupMsg);
-	  //return popupMsg.getText();
-	  
-	  }
-	 
+	public String fileUpload(String image) throws AWTException, IOException, InterruptedException {
 
-	 /* public void fileUpload(WebElement element) { Robot rob=new Robot();
-	 * //WebElement upload=driver.findElement(By.id("uploadfile_0")); Actions ac=new
-	 * Actions(driver); ac.moveToElement(element).click().perform();
-	 * //upload.click();
-	 * 
-	 * StringSelection ss = new
-	 * StringSelection("C:\\Users\\sanal\\Desktop\\image.jpg");
-	 * Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-	 * rob.delay(300); rob.keyPress(KeyEvent.VK_CONTROL);
-	 * rob.keyPress(KeyEvent.VK_V); rob.keyRelease(KeyEvent.VK_V);
-	 * rob.keyRelease(KeyEvent.VK_CONTROL); rob.keyPress(KeyEvent.VK_ENTER);
-	 * rob.delay(300); rob.keyRelease(KeyEvent.VK_ENTER);
-	 * 
-	 * }
-	 */
+		gu.getClickElement(MngExpenseMenu);
+		gu.getClickElement(MngExpenseOption);
+		gu.getClickElement(editBtn);
+		rob = new Robot();
+		gu.mediumDelay(3000);
+
+		WebElement click = driver.findElement(By.xpath("//*[@type='file']"));
+		Actions a = new Actions(driver);
+		a.moveToElement(click).click().perform();
+		gu.mediumDelay(3000);
+
+		StringSelection ss = new StringSelection(image);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		rob.delay(250);
+
+		rob.keyPress(KeyEvent.VK_CONTROL);
+		rob.keyPress(KeyEvent.VK_V);
+		rob.keyRelease(KeyEvent.VK_V);
+		rob.keyRelease(KeyEvent.VK_CONTROL);
+		rob.keyPress(KeyEvent.VK_ENTER);
+		rob.delay(250);
+		rob.keyRelease(KeyEvent.VK_ENTER);
+		gu.mediumDelay(1000);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)");
+
+		gu.mediumDelay(3000);
+
+		gu.getClickElement(updateBtn);
+		return gu.getElementText(popupMsg);
+
+	}
+
 }

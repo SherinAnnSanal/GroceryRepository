@@ -64,21 +64,21 @@ public class MngOrdersRepo {
 	public String getSelectedStatus(String s) {
 		gu.getClickElement(mngOrderMenu);
 		gu.getClickElement(searchBtn);
-		gu.selectFuncbyVisibletext(statusDropdown, s);
-		String selected = gu.FirstSelectedOption(statusDropdown);
-		gu.getClickElement(searchBtn2);
-
+		String selected=gu.selectFuncbyVisibletext(statusDropdown, s);
+		//String selected=gu.FirstSelectedOption(statusDropdown);
+		//gu.getClickElement(searchBtn2);
+		System.out.println(selected);
 		return selected;
 	}
 
 	public List<String> getListStatus() {
 		List<String> li = new ArrayList();
 //li=	gu.addList("Select","Paid","UnPaid","Delivered","Out for Delivery");
+		gu.addList("Select");
 		gu.addList("Paid");
-		gu.addList("UnPaid");
-		gu.addList("Delivered");
-		gu.addList("Out for Delivery");
-
+		//gu.addList("UnPaid");
+		li=gu.addList("Delivered");
+		//li=gu.addList("Out for Delivery");
 		return li;
 	}
 

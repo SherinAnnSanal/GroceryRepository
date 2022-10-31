@@ -3,7 +3,9 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 
 import java.awt.AWTException;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,6 +17,17 @@ import elementRepository.MngExpenseRepositoryPage;
 public class MngExpenseTestcase extends BaseClass {
 	LoginPage lp;
 	MngExpenseRepositoryPage expOb;
+	
+	
+	  public static void testBasic() throws IOException 
+	  {
+		  prop = new Properties();
+	  FileInputStream fileIO = new FileInputStream( System.getProperty("user.dir")+ "\\src\\main\\resources\\Properties\\Config.properties");
+	  
+	  prop.load(fileIO);
+	  }
+	 
+
 
 	// @Test
 	public void chkresetBtn() {
@@ -41,13 +54,21 @@ public class MngExpenseTestcase extends BaseClass {
 	}
 
 	@Test
-	public void chkFileUpload() throws AWTException, IOException {
+	public void chkFileUpload() throws AWTException, IOException, InterruptedException {
+
+		testBasic();
+		String image = System.getProperty("user.dir") + prop.getProperty("imgPath");
 		lp = new LoginPage(driver);
 		lp.presteps();
 		expOb = new MngExpenseRepositoryPage(driver);
 
-		 expOb.fileUpload();
-		//System.out.println(actual);
+		String actual = expOb.fileUpload(image);
+		String expected = " ×\r\n" + "Alert!\r\n" + "Expense Record Updated Successfully";
+		Assert.assertEquals(actual, expected, Constant.textErrorMsg);
 	}
-
+@Test
+public void chkCalendar()
+{
+	
+}
 }

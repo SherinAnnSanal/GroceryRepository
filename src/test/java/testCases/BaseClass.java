@@ -1,4 +1,4 @@
-   package testCases;
+package testCases;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -26,11 +26,11 @@ public class BaseClass {
 		FileInputStream fileIO = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\resources\\Properties\\Config.properties");
 		prop.load(fileIO);
-		
+
 	}
 
 	@Parameters("Browser")
-	@BeforeMethod(alwaysRun=true)
+	@BeforeMethod(alwaysRun = true)
 	public void beforemethod(String browser) throws InterruptedException, IOException {
 
 		if (browser.equals("chrome")) {
@@ -38,7 +38,6 @@ public class BaseClass {
 
 			System.setProperty(prop.getProperty("chromeBrowserDriver"),
 					System.getProperty("user.dir") + prop.getProperty("chromeDriverPath"));
-			
 
 			driver = new ChromeDriver();
 		} /*
@@ -60,7 +59,7 @@ public class BaseClass {
 
 		if (iTestResult.getStatus() == iTestResult.FAILURE) {
 			sc = new Screenshotcapture();
-			sc.Screenshotcapturefunc(driver, iTestResult.getName());//pass control of driver and function name also
+			sc.Screenshotcapturefunc(driver, iTestResult.getName());// pass control of driver and function name also
 
 		}
 		driver.close();
