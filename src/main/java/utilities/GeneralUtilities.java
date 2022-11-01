@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -18,13 +20,11 @@ public class GeneralUtilities {
 		String text = element.getText();
 		return text;
 	}
-	public boolean isDisplay(WebElement element)
-	{
-		boolean status=element.isDisplayed();
+
+	public boolean isDisplay(WebElement element) {
+		boolean status = element.isDisplayed();
 		return status;
 	}
-	
-	
 
 	public boolean isEnabled(WebElement element) {
 		boolean status = element.isEnabled();
@@ -61,11 +61,10 @@ public class GeneralUtilities {
 
 	public String selectFuncbyVisibletext(WebElement element, String visibletext) {
 		Select select = new Select(element);
-		List <WebElement>dropList=select.getOptions();
-			select.selectByVisibleText(visibletext);
+		select.selectByVisibleText(visibletext);
 		WebElement selectedValue = select.getFirstSelectedOption();
-		
-		
+		// List <WebElement>dropList=select.getOptions();
+
 		return (selectedValue.getText());
 
 	}
@@ -83,24 +82,70 @@ public class GeneralUtilities {
 		return op;
 
 	}
+
 	public String stylePropertyValidation(WebElement element, String propertyType) {
 		return element.getCssValue(propertyType);
 	}
 
-	public boolean isSelected(WebElement element)
-	{
+	public boolean isSelected(WebElement element) {
 		return element.isSelected();
 	}
-	List<String> list=new ArrayList<>();
-	public List<String> addList(String s)
-	{
-		
+
+	List<String> list = new ArrayList<>();
+
+	public List<String> addList(String s) {
+
 		list.add(s);
-	
+
 		return list;
 	}
+	public void alertHandlingaccept(WebDriver driver) {
+		driver.switchTo().alert().accept();
+	}
+
+	public String alerttext(WebDriver driver) {
+		return (driver.switchTo().alert().getText());
+	}
+
+	public void scrollDownOperation(WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,2500)");
+	}
+	public boolean getElementTextList(List<WebElement> actuallist, String element) {
+
+		boolean value = true;
+		for (int i = 0; i < actuallist.size(); i++) {
+
+			String text = actuallist.get(i).getText();
+
+			if (!text.equals(element))
+
+			{
+				value = false;
+
+			}
+		}
+
+		return value;
+	}
+	
+	public boolean compareLists(List<String> actuallist, List<String> expectedlist) {
+		boolean value = true;
+		for (int i = 0; i < actuallist.size(); i++) {
+			if (!actuallist.get(i).equals(expectedlist.get(i))) {
+				value = false;
+
+			}
+		}
+
+		return value;
+	}
+
 
 	
-	
 
-}
+	
+	}
+
+
+

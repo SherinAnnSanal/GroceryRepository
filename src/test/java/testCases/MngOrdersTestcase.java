@@ -30,7 +30,7 @@ public class MngOrdersTestcase extends BaseClass {
 
 	@DataProvider(name = "data-provider")
 	public Object[][] dpMethod() {
-		return new Object[][] { { "Select" }, { "Paid" }, { "Delivered" } };
+		return new Object[][] { { "Select" }, { "Paid2" }, { "Delivered" } };
 	}
 
 	@Test(dataProvider = "data-provider")

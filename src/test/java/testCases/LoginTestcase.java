@@ -16,7 +16,7 @@ public class LoginTestcase extends BaseClass {
 	List<String>loginList;
 
 	@DataProvider(name = "data")
-	public Object[][] getUserData() {
+	private Object[][] getUserData() {
 		return new Object[][] { { "admin", "admin" }, { "admin2", "admin3" }};
 	}
 
@@ -40,7 +40,7 @@ public class LoginTestcase extends BaseClass {
 		// lp.presteps();
 
 		String actual = lp.profileVerification();
-		String expected = "Adminss";
+		String expected = "Admin";
 		Assert.assertEquals(expected, actual,Constant.titleErrorMsg);
 
 	}

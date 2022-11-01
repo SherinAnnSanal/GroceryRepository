@@ -8,7 +8,7 @@
         <methods>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="chkElementsStatus" invocation-numbers="0 1 2"/>
+          <include name="chkElementsStatus" invocation-numbers="1"/>
         </methods>
       </class> <!-- testCases.MngOrdersTestcase -->
     </classes>
