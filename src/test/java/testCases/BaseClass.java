@@ -40,7 +40,7 @@ public class BaseClass {
 					System.getProperty("user.dir") + prop.getProperty("chromeDriverPath"));
 
 			driver = new ChromeDriver();
-		} /*
+		} /* 
 			 * else if (browser.equals("edge")) { testBasic();
 			 * 
 			 * System.setProperty(prop.getProperty("edgeBrowserDriver"),

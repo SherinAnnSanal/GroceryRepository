@@ -9,6 +9,9 @@
           <include name="chkImagePresent"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
+          <include name="chkStatus"/>
+          <include name="chkbgcolor"/>
+          <include name="chkTitle"/>
         </methods>
       </class> <!-- testCases.MobSliderTestcase -->
       <class name="testCases.MngLocationTestcase">
@@ -16,7 +19,6 @@
           <include name="getBgColor"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="chkStateselected"/>
         </methods>
       </class> <!-- testCases.MngLocationTestcase -->
       <class name="testCases.MngOfferCodeTestcase">
@@ -33,6 +35,15 @@
           <include name="chkElementsStatus" invocation-numbers="1"/>
         </methods>
       </class> <!-- testCases.MngOrdersTestcase -->
+      <class name="testCases.PushNotificationTestcase">
+        <methods>
+          <include name="chkBgColor"/>
+          <include name="chkText"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="chkMsg"/>
+        </methods>
+      </class> <!-- testCases.PushNotificationTestcase -->
       <class name="testCases.MngExpenseTestcase">
         <methods>
           <include name="chkFileUpload"/>

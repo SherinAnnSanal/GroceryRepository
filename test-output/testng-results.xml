@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="22" failed="6" skipped="0">
+<testng-results ignored="0" total="28" passed="17" failed="5" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-01T14:46:34 GST" name="My Testsuite2" finished-at="2022-11-01T14:55:43 GST" duration-ms="548898">
+  <suite started-at="2022-11-02T08:18:34 GST" name="My Testsuite2" finished-at="2022-11-02T08:28:20 GST" duration-ms="586171">
     <groups>
       <group name="SmokeTest">
-        <method signature="DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" name="checkProfileName" class="testCases.DashBoardTestCase"/>
-        <method signature="LoginTestcase.verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@242b836]" name="verifyLoggedUsers1" class="testCases.LoginTestcase"/>
+        <method signature="DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@2805d709]" name="checkProfileName" class="testCases.DashBoardTestCase"/>
+        <method signature="LoginTestcase.verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@3f6f6701]" name="verifyLoggedUsers1" class="testCases.LoginTestcase"/>
       </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2022-11-01T14:46:34 GST" name="ChromeTest1" finished-at="2022-11-01T14:55:43 GST" duration-ms="548898">
+    <test started-at="2022-11-02T08:18:34 GST" name="ChromeTest1" finished-at="2022-11-02T08:28:20 GST" duration-ms="586171">
       <class name="testCases.MngExpenseTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@5a45133e]" started-at="2022-11-01T14:52:12 GST" name="beforemethod" finished-at="2022-11-01T14:52:18 GST" duration-ms="5892" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@534a5a98]" started-at="2022-11-02T08:23:49 GST" name="beforemethod" finished-at="2022-11-02T08:23:55 GST" duration-ms="5674" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkCalendar()[pri:0, instance:testCases.MngExpenseTestcase@5a45133e]" started-at="2022-11-01T14:52:18 GST" name="chkCalendar" finished-at="2022-11-01T14:52:18 GST" duration-ms="1" status="PASS">
+        <test-method signature="chkCalendar()[pri:0, instance:testCases.MngExpenseTestcase@534a5a98]" started-at="2022-11-02T08:23:55 GST" name="chkCalendar" finished-at="2022-11-02T08:23:55 GST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkCalendar -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@5a45133e]" started-at="2022-11-01T14:52:18 GST" name="aftermethod" finished-at="2022-11-01T14:52:18 GST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@534a5a98]" started-at="2022-11-02T08:23:55 GST" name="aftermethod" finished-at="2022-11-02T08:24:11 GST" duration-ms="16246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkCalendar status=SUCCESS method=MngExpenseTestcase.chkCalendar()[pri:0, instance:testCases.MngExpenseTestcase@5a45133e] output={null}]]]>
+                <![CDATA[[TestResult name=chkCalendar status=SUCCESS method=MngExpenseTestcase.chkCalendar()[pri:0, instance:testCases.MngExpenseTestcase@534a5a98] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@5a45133e]" started-at="2022-11-01T14:52:18 GST" name="beforemethod" finished-at="2022-11-01T14:52:24 GST" duration-ms="6029" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@534a5a98]" started-at="2022-11-02T08:24:11 GST" name="beforemethod" finished-at="2022-11-02T08:24:17 GST" duration-ms="5718" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@5a45133e]" started-at="2022-11-01T14:52:24 GST" name="chkFileUpload" finished-at="2022-11-01T14:52:55 GST" duration-ms="31059" status="FAIL">
+        <test-method signature="chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@534a5a98]" started-at="2022-11-02T08:24:17 GST" name="chkFileUpload" finished-at="2022-11-02T08:24:31 GST" duration-ms="14692" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Displayed text is not as expected expected [ ×
@@ -103,11 +103,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkFileUpload -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@5a45133e]" started-at="2022-11-01T14:52:55 GST" name="aftermethod" finished-at="2022-11-01T14:52:55 GST" duration-ms="334" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@534a5a98]" started-at="2022-11-02T08:24:31 GST" name="aftermethod" finished-at="2022-11-02T08:24:48 GST" duration-ms="16386" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkFileUpload status=FAILURE method=MngExpenseTestcase.chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@5a45133e] output={null}]]]>
+                <![CDATA[[TestResult name=chkFileUpload status=FAILURE method=MngExpenseTestcase.chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@534a5a98] output={null}]]]>
               </value>
             </param>
           </params>
@@ -116,7 +116,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.MngExpenseTestcase -->
       <class name="testCases.MngDelvryBoyTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:51:39 GST" name="beforemethod" finished-at="2022-11-01T14:51:46 GST" duration-ms="6272" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:22:34 GST" name="beforemethod" finished-at="2022-11-02T08:22:39 GST" duration-ms="5730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,22 +127,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkBgColor()[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:51:46 GST" name="chkBgColor" finished-at="2022-11-01T14:51:51 GST" duration-ms="5102" status="PASS">
+        <test-method signature="chkBgColor()[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:22:39 GST" name="chkBgColor" finished-at="2022-11-02T08:22:44 GST" duration-ms="4860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkBgColor -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:51:51 GST" name="aftermethod" finished-at="2022-11-01T14:51:51 GST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:22:44 GST" name="aftermethod" finished-at="2022-11-02T08:23:01 GST" duration-ms="16191" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkBgColor status=SUCCESS method=MngDelvryBoyTestcase.chkBgColor()[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a] output={null}]]]>
+                <![CDATA[[TestResult name=chkBgColor status=SUCCESS method=MngDelvryBoyTestcase.chkBgColor()[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:51:51 GST" name="beforemethod" finished-at="2022-11-01T14:51:57 GST" duration-ms="6040" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:23:01 GST" name="beforemethod" finished-at="2022-11-02T08:23:06 GST" duration-ms="5697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,22 +153,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkName()[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:51:57 GST" name="chkName" finished-at="2022-11-01T14:52:03 GST" duration-ms="5414" status="PASS">
+        <test-method signature="chkName()[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:23:06 GST" name="chkName" finished-at="2022-11-02T08:23:09 GST" duration-ms="2601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkName -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:52:03 GST" name="aftermethod" finished-at="2022-11-01T14:52:03 GST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:23:09 GST" name="aftermethod" finished-at="2022-11-02T08:23:25 GST" duration-ms="16243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkName status=SUCCESS method=MngDelvryBoyTestcase.chkName()[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a] output={null}]]]>
+                <![CDATA[[TestResult name=chkName status=SUCCESS method=MngDelvryBoyTestcase.chkName()[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:52:03 GST" name="beforemethod" finished-at="2022-11-01T14:52:09 GST" duration-ms="6777" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:23:25 GST" name="beforemethod" finished-at="2022-11-02T08:23:31 GST" duration-ms="5703" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,15 +179,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkToolTip()[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:52:09 GST" name="chkToolTip" finished-at="2022-11-01T14:52:12 GST" duration-ms="2230" status="PASS">
+        <test-method signature="chkToolTip()[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:23:31 GST" name="chkToolTip" finished-at="2022-11-02T08:23:33 GST" duration-ms="1937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkToolTip -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a]" started-at="2022-11-01T14:52:12 GST" name="aftermethod" finished-at="2022-11-01T14:52:12 GST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e]" started-at="2022-11-02T08:23:33 GST" name="aftermethod" finished-at="2022-11-02T08:23:49 GST" duration-ms="16216" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkToolTip status=SUCCESS method=MngDelvryBoyTestcase.chkToolTip()[pri:0, instance:testCases.MngDelvryBoyTestcase@1ed6388a] output={null}]]]>
+                <![CDATA[[TestResult name=chkToolTip status=SUCCESS method=MngDelvryBoyTestcase.chkToolTip()[pri:0, instance:testCases.MngDelvryBoyTestcase@5a45133e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -196,7 +196,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.MngDelvryBoyTestcase -->
       <class name="testCases.LoginTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:12 GST" name="beforemethod" finished-at="2022-11-01T14:47:18 GST" duration-ms="6185" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:19:46 GST" name="beforemethod" finished-at="2022-11-02T08:19:51 GST" duration-ms="5824" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -207,22 +207,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="verifyCheckBox()[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:18 GST" name="verifyCheckBox" finished-at="2022-11-01T14:47:18 GST" duration-ms="31" status="PASS">
+        <test-method signature="verifyCheckBox()[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:19:51 GST" name="verifyCheckBox" finished-at="2022-11-02T08:19:51 GST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckBox -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:18 GST" name="aftermethod" finished-at="2022-11-01T14:47:19 GST" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:19:51 GST" name="aftermethod" finished-at="2022-11-02T08:20:08 GST" duration-ms="16257" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCheckBox status=SUCCESS method=LoginTestcase.verifyCheckBox()[pri:0, instance:testCases.LoginTestcase@242b836] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCheckBox status=SUCCESS method=LoginTestcase.verifyCheckBox()[pri:0, instance:testCases.LoginTestcase@3f6f6701] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:19 GST" name="beforemethod" finished-at="2022-11-01T14:47:24 GST" duration-ms="5845" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:20:08 GST" name="beforemethod" finished-at="2022-11-02T08:20:13 GST" duration-ms="5732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -233,22 +233,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="verifyLoggedUsers()[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:24 GST" name="verifyLoggedUsers" finished-at="2022-11-01T14:47:27 GST" duration-ms="2102" status="PASS">
+        <test-method signature="verifyLoggedUsers()[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:20:13 GST" name="verifyLoggedUsers" finished-at="2022-11-02T08:20:15 GST" duration-ms="1996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoggedUsers -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:27 GST" name="aftermethod" finished-at="2022-11-01T14:47:27 GST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:20:15 GST" name="aftermethod" finished-at="2022-11-02T08:20:32 GST" duration-ms="16234" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoggedUsers status=SUCCESS method=LoginTestcase.verifyLoggedUsers()[pri:0, instance:testCases.LoginTestcase@242b836] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoggedUsers status=SUCCESS method=LoginTestcase.verifyLoggedUsers()[pri:0, instance:testCases.LoginTestcase@3f6f6701] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:27 GST" name="beforemethod" finished-at="2022-11-01T14:47:45 GST" duration-ms="18722" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:20:32 GST" name="beforemethod" finished-at="2022-11-02T08:20:37 GST" duration-ms="5681" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,15 +259,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:45 GST" name="verifyLoggedUsers1" finished-at="2022-11-01T14:47:45 GST" duration-ms="32" status="PASS">
+        <test-method signature="verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:20:37 GST" name="verifyLoggedUsers1" finished-at="2022-11-02T08:20:37 GST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoggedUsers1 -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@242b836]" started-at="2022-11-01T14:47:45 GST" name="aftermethod" finished-at="2022-11-01T14:47:46 GST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@3f6f6701]" started-at="2022-11-02T08:20:37 GST" name="aftermethod" finished-at="2022-11-02T08:20:54 GST" duration-ms="16263" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoggedUsers1 status=SUCCESS method=LoginTestcase.verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@242b836] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoggedUsers1 status=SUCCESS method=LoginTestcase.verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@3f6f6701] output={null}]]]>
               </value>
             </param>
           </params>
@@ -276,7 +276,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.LoginTestcase -->
       <class name="testCases.MngLocationTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:47:46 GST" name="beforemethod" finished-at="2022-11-01T14:47:52 GST" duration-ms="6312" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:20:54 GST" name="beforemethod" finished-at="2022-11-02T08:20:59 GST" duration-ms="5722" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -287,101 +287,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkStateselected()[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:47:52 GST" name="chkStateselected" finished-at="2022-11-01T14:50:52 GST" duration-ms="180173" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [316e00a34337369efe51847fab7558b7, clickElement {id=a93854d1-99ca-46ef-a5fc-f81289b6c266}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61132/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (316e00a34337369efe51847fab7558b7)] -> xpath: //button[@class='btn btn-dark btn-block']]
-Session ID: 316e00a34337369efe51847fab7558b7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [316e00a34337369efe51847fab7558b7, clickElement {id=a93854d1-99ca-46ef-a5fc-f81289b6c266}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61132/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (316e00a34337369efe51847fab7558b7)] -> xpath: //button[@class='btn btn-dark btn-block']]
-Session ID: 316e00a34337369efe51847fab7558b7
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at elementRepository.LoginPage.clickSignin(LoginPage.java:66)
-at elementRepository.LoginPage.presteps(LoginPage.java:88)
-at testCases.MngLocationTestcase.chkStateselected(MngLocationTestcase.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-... 49 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="chkStateselected()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:20:59 GST" name="chkStateselected" finished-at="2022-11-02T08:21:06 GST" duration-ms="6449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkStateselected -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:50:52 GST" name="aftermethod" finished-at="2022-11-01T14:51:04 GST" duration-ms="11960" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:06 GST" name="aftermethod" finished-at="2022-11-02T08:21:22 GST" duration-ms="16239" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkStateselected status=FAILURE method=MngLocationTestcase.chkStateselected()[pri:0, instance:testCases.MngLocationTestcase@942a29c] output={null}]]]>
+                <![CDATA[[TestResult name=chkStateselected status=SUCCESS method=MngLocationTestcase.chkStateselected()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:04 GST" name="beforemethod" finished-at="2022-11-01T14:51:14 GST" duration-ms="9723" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:22 GST" name="beforemethod" finished-at="2022-11-02T08:21:28 GST" duration-ms="5683" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -392,22 +313,22 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkStatus()[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:14 GST" name="chkStatus" finished-at="2022-11-01T14:51:18 GST" duration-ms="4501" status="PASS">
+        <test-method signature="chkStatus()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:28 GST" name="chkStatus" finished-at="2022-11-02T08:21:30 GST" duration-ms="1910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkStatus -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:18 GST" name="aftermethod" finished-at="2022-11-01T14:51:21 GST" duration-ms="2471" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:30 GST" name="aftermethod" finished-at="2022-11-02T08:21:46 GST" duration-ms="16264" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkStatus status=SUCCESS method=MngLocationTestcase.chkStatus()[pri:0, instance:testCases.MngLocationTestcase@942a29c] output={null}]]]>
+                <![CDATA[[TestResult name=chkStatus status=SUCCESS method=MngLocationTestcase.chkStatus()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:21 GST" name="beforemethod" finished-at="2022-11-01T14:51:27 GST" duration-ms="5998" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:46 GST" name="beforemethod" finished-at="2022-11-02T08:21:52 GST" duration-ms="5715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -418,7 +339,7 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="getBgColor()[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:27 GST" name="getBgColor" finished-at="2022-11-01T14:51:29 GST" duration-ms="2046" status="FAIL">
+        <test-method signature="getBgColor()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:52 GST" name="getBgColor" finished-at="2022-11-02T08:21:53 GST" duration-ms="1858" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Displayed text style is not as expected expected [rgba(255, 193, 7, 1)] but found [rgba(40, 167, 69, 1)]]]>
@@ -465,18 +386,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBgColor -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:29 GST" name="aftermethod" finished-at="2022-11-01T14:51:29 GST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:21:53 GST" name="aftermethod" finished-at="2022-11-02T08:22:10 GST" duration-ms="16470" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getBgColor status=FAILURE method=MngLocationTestcase.getBgColor()[pri:0, instance:testCases.MngLocationTestcase@942a29c] output={null}]]]>
+                <![CDATA[[TestResult name=getBgColor status=FAILURE method=MngLocationTestcase.getBgColor()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:29 GST" name="beforemethod" finished-at="2022-11-01T14:51:35 GST" duration-ms="5874" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:22:10 GST" name="beforemethod" finished-at="2022-11-02T08:22:16 GST" duration-ms="5667" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -487,15 +408,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="getDelCharge()[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:35 GST" name="getDelCharge" finished-at="2022-11-01T14:51:37 GST" duration-ms="1986" status="PASS">
+        <test-method signature="getDelCharge()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:22:16 GST" name="getDelCharge" finished-at="2022-11-02T08:22:17 GST" duration-ms="1878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDelCharge -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@942a29c]" started-at="2022-11-01T14:51:37 GST" name="aftermethod" finished-at="2022-11-01T14:51:39 GST" duration-ms="2443" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@1ed6388a]" started-at="2022-11-02T08:22:17 GST" name="aftermethod" finished-at="2022-11-02T08:22:34 GST" duration-ms="16276" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getDelCharge status=SUCCESS method=MngLocationTestcase.getDelCharge()[pri:0, instance:testCases.MngLocationTestcase@942a29c] output={null}]]]>
+                <![CDATA[[TestResult name=getDelCharge status=SUCCESS method=MngLocationTestcase.getDelCharge()[pri:0, instance:testCases.MngLocationTestcase@1ed6388a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -504,7 +425,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.MngLocationTestcase -->
       <class name="testCases.MngOrdersTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:53:24 GST" name="beforemethod" finished-at="2022-11-01T14:53:30 GST" duration-ms="5877" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:25:37 GST" name="beforemethod" finished-at="2022-11-02T08:25:43 GST" duration-ms="5696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -515,7 +436,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:53:30 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-01T14:53:46 GST" duration-ms="16337" status="PASS">
+        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:25:43 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-02T08:25:47 GST" duration-ms="3506" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -526,18 +447,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkElementsStatus -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:53:46 GST" name="aftermethod" finished-at="2022-11-01T14:53:47 GST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:25:47 GST" name="aftermethod" finished-at="2022-11-02T08:25:47 GST" duration-ms="158" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f] output={null}]]]>
+                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:53:47 GST" name="beforemethod" finished-at="2022-11-01T14:53:53 GST" duration-ms="6031" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:25:47 GST" name="beforemethod" finished-at="2022-11-02T08:25:54 GST" duration-ms="6851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -548,7 +469,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:53:53 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-01T14:54:06 GST" duration-ms="13139" status="FAIL">
+        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:25:54 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-02T08:26:06 GST" duration-ms="12236" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -608,18 +529,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkElementsStatus -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:06 GST" name="aftermethod" finished-at="2022-11-01T14:54:06 GST" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:06 GST" name="aftermethod" finished-at="2022-11-02T08:26:22 GST" duration-ms="16399" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkElementsStatus status=FAILURE method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f] output={null}]]]>
+                <![CDATA[[TestResult name=chkElementsStatus status=FAILURE method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:06 GST" name="beforemethod" finished-at="2022-11-01T14:54:15 GST" duration-ms="9029" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:22 GST" name="beforemethod" finished-at="2022-11-02T08:26:28 GST" duration-ms="5676" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -630,7 +551,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:15 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-01T14:54:18 GST" duration-ms="2670" status="PASS">
+        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:28 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-02T08:26:31 GST" duration-ms="2871" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -641,18 +562,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkElementsStatus -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:18 GST" name="aftermethod" finished-at="2022-11-01T14:54:18 GST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:31 GST" name="aftermethod" finished-at="2022-11-02T08:26:47 GST" duration-ms="16234" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f] output={null}]]]>
+                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:18 GST" name="beforemethod" finished-at="2022-11-01T14:54:24 GST" duration-ms="5890" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:47 GST" name="beforemethod" finished-at="2022-11-02T08:26:53 GST" duration-ms="5844" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -663,15 +584,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkSrchByPaymentMode()[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:24 GST" name="chkSrchByPaymentMode" finished-at="2022-11-01T14:54:28 GST" duration-ms="4092" status="PASS">
+        <test-method signature="chkSrchByPaymentMode()[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:53 GST" name="chkSrchByPaymentMode" finished-at="2022-11-02T08:26:56 GST" duration-ms="3430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkSrchByPaymentMode -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@4f80542f]" started-at="2022-11-01T14:54:28 GST" name="aftermethod" finished-at="2022-11-01T14:54:28 GST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@60bd273d]" started-at="2022-11-02T08:26:56 GST" name="aftermethod" finished-at="2022-11-02T08:27:13 GST" duration-ms="16249" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkSrchByPaymentMode status=SUCCESS method=MngOrdersTestcase.chkSrchByPaymentMode()[pri:0, instance:testCases.MngOrdersTestcase@4f80542f] output={null}]]]>
+                <![CDATA[[TestResult name=chkSrchByPaymentMode status=SUCCESS method=MngOrdersTestcase.chkSrchByPaymentMode()[pri:0, instance:testCases.MngOrdersTestcase@60bd273d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -680,7 +601,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.MngOrdersTestcase -->
       <class name="testCases.PushNotificationTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:15 GST" name="beforemethod" finished-at="2022-11-01T14:55:21 GST" duration-ms="6535" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:27:50 GST" name="beforemethod" finished-at="2022-11-02T08:28:12 GST" duration-ms="21845" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -688,25 +609,188 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+... 35 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkBgColor()[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:21 GST" name="chkBgColor" finished-at="2022-11-01T14:55:23 GST" duration-ms="1981" status="PASS">
+        <test-method signature="chkBgColor()[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:12 GST" name="chkBgColor" finished-at="2022-11-02T08:28:12 GST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+... 35 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkBgColor -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:23 GST" name="aftermethod" finished-at="2022-11-01T14:55:23 GST" duration-ms="129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=chkBgColor status=SUCCESS method=PushNotificationTestcase.chkBgColor()[pri:0, instance:testCases.PushNotificationTestcase@121314f7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:12 GST" name="aftermethod" finished-at="1970-01-01T04:00:00 GST" duration-ms="-1667363292260" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:23 GST" name="beforemethod" finished-at="2022-11-01T14:55:29 GST" duration-ms="5922" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:12 GST" name="beforemethod" finished-at="2022-11-02T08:28:17 GST" duration-ms="5700" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -717,22 +801,100 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkMsg()[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:29 GST" name="chkMsg" finished-at="2022-11-01T14:55:34 GST" duration-ms="4678" status="PASS">
+        <test-method signature="chkMsg()[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:17 GST" name="chkMsg" finished-at="2022-11-02T08:28:17 GST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+... 35 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkMsg -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:34 GST" name="aftermethod" finished-at="2022-11-01T14:55:34 GST" duration-ms="132" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=chkMsg status=SUCCESS method=PushNotificationTestcase.chkMsg()[pri:0, instance:testCases.PushNotificationTestcase@121314f7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:17 GST" name="aftermethod" finished-at="1970-01-01T04:00:00 GST" duration-ms="-1667363297962" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:34 GST" name="beforemethod" finished-at="2022-11-01T14:55:41 GST" duration-ms="6753" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:17 GST" name="beforemethod" finished-at="2022-11-02T08:28:20 GST" duration-ms="2303" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -740,27 +902,177 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe567978fe6c21ef662c4a6988564f29, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52005/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe567978fe6c21ef662c4a6988564f29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe567978fe6c21ef662c4a6988564f29, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52005/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe567978fe6c21ef662c4a6988564f29
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkText()[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:41 GST" name="chkText" finished-at="2022-11-01T14:55:43 GST" duration-ms="2023" status="PASS">
+        <test-method signature="chkText()[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:20 GST" name="chkText" finished-at="2022-11-02T08:28:20 GST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef97bc98964a40a45ce970afb980c661, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51931/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef97bc98964a40a45ce970afb980c661
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+... 35 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkText -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@121314f7]" started-at="2022-11-01T14:55:43 GST" name="aftermethod" finished-at="2022-11-01T14:55:43 GST" duration-ms="128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=chkText status=SUCCESS method=PushNotificationTestcase.chkText()[pri:0, instance:testCases.PushNotificationTestcase@121314f7] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@130c12b7]" started-at="2022-11-02T08:28:20 GST" name="aftermethod" finished-at="1970-01-01T04:00:00 GST" duration-ms="-1667363300275" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.PushNotificationTestcase -->
       <class name="testCases.MngOfferCodeTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98]" started-at="2022-11-01T14:52:55 GST" name="beforemethod" finished-at="2022-11-01T14:53:09 GST" duration-ms="13338" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f]" started-at="2022-11-02T08:24:48 GST" name="beforemethod" finished-at="2022-11-02T08:24:53 GST" duration-ms="5687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -771,29 +1083,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkAddOffer()[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98]" started-at="2022-11-01T14:53:09 GST" name="chkAddOffer" finished-at="2022-11-01T14:53:16 GST" duration-ms="7308" status="FAIL">
+        <test-method signature="chkAddOffer()[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f]" started-at="2022-11-02T08:24:53 GST" name="chkAddOffer" finished-at="2022-11-02T08:24:58 GST" duration-ms="4376" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element is not clickable at point (334, 955)
-  (Session info: chrome=106.0.5249.119)
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [896119f6c0e21355e85e969be13feb7c, clickElement {id=1ec28273-f34a-4646-822f-dd1b55ee44d6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61406/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (896119f6c0e21355e85e969be13feb7c)] -> xpath: //button[@class='btn btn-danger']]
-Session ID: 896119f6c0e21355e85e969be13feb7c]]>
+Command: [6bfaef10ee40d86082d013d941978714, clickElement {id=817ce244-85c7-41a1-9c77-4eb2f40b2faf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51266}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51266/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6bfaef10ee40d86082d013d941978714)] -> xpath: //button[@class='btn btn-danger']]
+Session ID: 6bfaef10ee40d86082d013d941978714]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 955)
-  (Session info: chrome=106.0.5249.119)
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [896119f6c0e21355e85e969be13feb7c, clickElement {id=1ec28273-f34a-4646-822f-dd1b55ee44d6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61406/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (896119f6c0e21355e85e969be13feb7c)] -> xpath: //button[@class='btn btn-danger']]
-Session ID: 896119f6c0e21355e85e969be13feb7c
+Command: [6bfaef10ee40d86082d013d941978714, clickElement {id=817ce244-85c7-41a1-9c77-4eb2f40b2faf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51266}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51266/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6bfaef10ee40d86082d013d941978714)] -> xpath: //button[@class='btn btn-danger']]
+Session ID: 6bfaef10ee40d86082d013d941978714
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -850,18 +1162,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkAddOffer -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98]" started-at="2022-11-01T14:53:16 GST" name="aftermethod" finished-at="2022-11-01T14:53:16 GST" duration-ms="398" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f]" started-at="2022-11-02T08:24:58 GST" name="aftermethod" finished-at="2022-11-02T08:25:14 GST" duration-ms="16368" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkAddOffer status=FAILURE method=MngOfferCodeTestcase.chkAddOffer()[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98] output={null}]]]>
+                <![CDATA[[TestResult name=chkAddOffer status=FAILURE method=MngOfferCodeTestcase.chkAddOffer()[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98]" started-at="2022-11-01T14:53:16 GST" name="beforemethod" finished-at="2022-11-01T14:53:22 GST" duration-ms="6015" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f]" started-at="2022-11-02T08:25:14 GST" name="beforemethod" finished-at="2022-11-02T08:25:20 GST" duration-ms="5727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -872,15 +1184,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkUrlPage()[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98]" started-at="2022-11-01T14:53:22 GST" name="chkUrlPage" finished-at="2022-11-01T14:53:24 GST" duration-ms="1613" status="PASS">
+        <test-method signature="chkUrlPage()[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f]" started-at="2022-11-02T08:25:20 GST" name="chkUrlPage" finished-at="2022-11-02T08:25:21 GST" duration-ms="1436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkUrlPage -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98]" started-at="2022-11-01T14:53:24 GST" name="aftermethod" finished-at="2022-11-01T14:53:24 GST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f]" started-at="2022-11-02T08:25:21 GST" name="aftermethod" finished-at="2022-11-02T08:25:37 GST" duration-ms="16244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkUrlPage status=SUCCESS method=MngOfferCodeTestcase.chkUrlPage()[pri:0, instance:testCases.MngOfferCodeTestcase@534a5a98] output={null}]]]>
+                <![CDATA[[TestResult name=chkUrlPage status=SUCCESS method=MngOfferCodeTestcase.chkUrlPage()[pri:0, instance:testCases.MngOfferCodeTestcase@4f80542f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -889,7 +1201,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.MngOfferCodeTestcase -->
       <class name="testCases.DashBoardTestCase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:46:34 GST" name="beforemethod" finished-at="2022-11-01T14:46:49 GST" duration-ms="14460" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:18:34 GST" name="beforemethod" finished-at="2022-11-02T08:18:40 GST" duration-ms="6816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -900,22 +1212,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:46:49 GST" name="checkColorHomeBtn" finished-at="2022-11-01T14:46:50 GST" duration-ms="1770" status="PASS">
+        <test-method signature="checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:18:40 GST" name="checkColorHomeBtn" finished-at="2022-11-02T08:18:42 GST" duration-ms="1623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkColorHomeBtn -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:46:50 GST" name="aftermethod" finished-at="2022-11-01T14:46:51 GST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:18:42 GST" name="aftermethod" finished-at="2022-11-02T08:18:58 GST" duration-ms="16252" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkColorHomeBtn status=SUCCESS method=DashBoardTestCase.checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f] output={null}]]]>
+                <![CDATA[[TestResult name=checkColorHomeBtn status=SUCCESS method=DashBoardTestCase.checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@2805d709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:46:51 GST" name="beforemethod" finished-at="2022-11-01T14:46:57 GST" duration-ms="6444" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:18:58 GST" name="beforemethod" finished-at="2022-11-02T08:19:04 GST" duration-ms="5987" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -926,22 +1238,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:46:57 GST" name="checkEnableBar" finished-at="2022-11-01T14:47:01 GST" duration-ms="4236" status="PASS">
+        <test-method signature="checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:19:04 GST" name="checkEnableBar" finished-at="2022-11-02T08:19:06 GST" duration-ms="1554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkEnableBar -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:47:01 GST" name="aftermethod" finished-at="2022-11-01T14:47:01 GST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:19:06 GST" name="aftermethod" finished-at="2022-11-02T08:19:22 GST" duration-ms="16285" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkEnableBar status=SUCCESS method=DashBoardTestCase.checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f] output={null}]]]>
+                <![CDATA[[TestResult name=checkEnableBar status=SUCCESS method=DashBoardTestCase.checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@2805d709] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:47:01 GST" name="beforemethod" finished-at="2022-11-01T14:47:08 GST" duration-ms="6654" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:19:22 GST" name="beforemethod" finished-at="2022-11-02T08:19:28 GST" duration-ms="5711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -952,15 +1264,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:47:08 GST" name="checkProfileName" finished-at="2022-11-01T14:47:10 GST" duration-ms="1624" status="PASS">
+        <test-method signature="checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:19:28 GST" name="checkProfileName" finished-at="2022-11-02T08:19:29 GST" duration-ms="1453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkProfileName -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f]" started-at="2022-11-01T14:47:10 GST" name="aftermethod" finished-at="2022-11-01T14:47:12 GST" duration-ms="2467" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@2805d709]" started-at="2022-11-02T08:19:29 GST" name="aftermethod" finished-at="2022-11-02T08:19:46 GST" duration-ms="16235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkProfileName status=SUCCESS method=DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@6e0f5f7f] output={null}]]]>
+                <![CDATA[[TestResult name=checkProfileName status=SUCCESS method=DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@2805d709] output={null}]]]>
               </value>
             </param>
           </params>
@@ -969,7 +1281,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.DashBoardTestCase -->
       <class name="testCases.MobSliderTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:28 GST" name="beforemethod" finished-at="2022-11-01T14:54:34 GST" duration-ms="6128" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:13 GST" name="beforemethod" finished-at="2022-11-02T08:27:18 GST" duration-ms="5664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -980,29 +1292,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkImagePresent()[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:34 GST" name="chkImagePresent" finished-at="2022-11-01T14:54:44 GST" duration-ms="10034" status="FAIL">
+        <test-method signature="chkImagePresent()[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:18 GST" name="chkImagePresent" finished-at="2022-11-02T08:27:23 GST" duration-ms="4258" status="FAIL">
           <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
               <![CDATA[invalid argument
-  (Session info: chrome=106.0.5249.119)
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c6258e3fa5cdbed617a8218f8f14993c, clickElement {id=3bb8e50f-9779-41f1-9a10-e93df9e6eb06}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61568/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c6258e3fa5cdbed617a8218f8f14993c)] -> id: main_img]
-Session ID: c6258e3fa5cdbed617a8218f8f14993c]]>
+Command: [031c607823b52fafdf548c359811b1e0, clickElement {id=4a87cae2-1ee7-4e48-a365-ddf833c67d9e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51800/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (031c607823b52fafdf548c359811b1e0)] -> id: main_img]
+Session ID: 031c607823b52fafdf548c359811b1e0]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=106.0.5249.119)
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c6258e3fa5cdbed617a8218f8f14993c, clickElement {id=3bb8e50f-9779-41f1-9a10-e93df9e6eb06}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61568/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c6258e3fa5cdbed617a8218f8f14993c)] -> id: main_img]
-Session ID: c6258e3fa5cdbed617a8218f8f14993c
+Command: [031c607823b52fafdf548c359811b1e0, clickElement {id=4a87cae2-1ee7-4e48-a365-ddf833c67d9e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51800/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (031c607823b52fafdf548c359811b1e0)] -> id: main_img]
+Session ID: 031c607823b52fafdf548c359811b1e0
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1059,18 +1371,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkImagePresent -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:44 GST" name="aftermethod" finished-at="2022-11-01T14:54:45 GST" duration-ms="469" status="PASS">
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:23 GST" name="aftermethod" finished-at="2022-11-02T08:27:39 GST" duration-ms="16616" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkImagePresent status=FAILURE method=MobSliderTestcase.chkImagePresent()[pri:0, instance:testCases.MobSliderTestcase@60bd273d] output={null}]]]>
+                <![CDATA[[TestResult name=chkImagePresent status=FAILURE method=MobSliderTestcase.chkImagePresent()[pri:0, instance:testCases.MobSliderTestcase@121314f7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:45 GST" name="beforemethod" finished-at="2022-11-01T14:54:51 GST" duration-ms="6092" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:39 GST" name="beforemethod" finished-at="2022-11-02T08:27:42 GST" duration-ms="2539" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1078,25 +1390,162 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e7f00c0c4be750051dfe4b7d2f846d, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51859/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e7f00c0c4be750051dfe4b7d2f846d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e7f00c0c4be750051dfe4b7d2f846d, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51859/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e7f00c0c4be750051dfe4b7d2f846d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkStatus()[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:51 GST" name="chkStatus" finished-at="2022-11-01T14:54:53 GST" duration-ms="2555" status="PASS">
+        <test-method signature="chkStatus()[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:42 GST" name="chkStatus" finished-at="2022-11-02T08:27:42 GST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e7f00c0c4be750051dfe4b7d2f846d, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51859/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e7f00c0c4be750051dfe4b7d2f846d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e7f00c0c4be750051dfe4b7d2f846d, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51859/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e7f00c0c4be750051dfe4b7d2f846d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkStatus -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:53 GST" name="aftermethod" finished-at="2022-11-01T14:54:54 GST" duration-ms="90" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=chkStatus status=SUCCESS method=MobSliderTestcase.chkStatus()[pri:0, instance:testCases.MobSliderTestcase@60bd273d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:42 GST" name="aftermethod" finished-at="1970-01-01T04:00:00 GST" duration-ms="-1667363262226" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:54:54 GST" name="beforemethod" finished-at="2022-11-01T14:55:00 GST" duration-ms="6550" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:42 GST" name="beforemethod" finished-at="2022-11-02T08:27:44 GST" duration-ms="2456" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1104,25 +1553,162 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [490200143f6e9099c944737acd73134b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 490200143f6e9099c944737acd73134b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [490200143f6e9099c944737acd73134b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 490200143f6e9099c944737acd73134b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkTitle()[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:55:00 GST" name="chkTitle" finished-at="2022-11-01T14:55:03 GST" duration-ms="2646" status="PASS">
+        <test-method signature="chkTitle()[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:44 GST" name="chkTitle" finished-at="2022-11-02T08:27:44 GST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [490200143f6e9099c944737acd73134b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 490200143f6e9099c944737acd73134b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [490200143f6e9099c944737acd73134b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 490200143f6e9099c944737acd73134b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkTitle -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:55:03 GST" name="aftermethod" finished-at="2022-11-01T14:55:03 GST" duration-ms="171" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=chkTitle status=SUCCESS method=MobSliderTestcase.chkTitle()[pri:0, instance:testCases.MobSliderTestcase@60bd273d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:44 GST" name="aftermethod" finished-at="1970-01-01T04:00:00 GST" duration-ms="-1667363264690" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:55:03 GST" name="beforemethod" finished-at="2022-11-01T14:55:09 GST" duration-ms="5973" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:44 GST" name="beforemethod" finished-at="2022-11-02T08:27:50 GST" duration-ms="5718" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1133,18 +1719,83 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkbgcolor()[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:55:09 GST" name="chkbgcolor" finished-at="2022-11-01T14:55:15 GST" duration-ms="5646" status="PASS">
+        <test-method signature="chkbgcolor()[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:50 GST" name="chkbgcolor" finished-at="2022-11-02T08:27:50 GST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [490200143f6e9099c944737acd73134b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 490200143f6e9099c944737acd73134b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-0ILCENT', ip: '192.168.100.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [490200143f6e9099c944737acd73134b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51883/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 490200143f6e9099c944737acd73134b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
+at testCases.BaseClass.beforemethod(BaseClass.java:51)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chkbgcolor -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@60bd273d]" started-at="2022-11-01T14:55:15 GST" name="aftermethod" finished-at="2022-11-01T14:55:15 GST" duration-ms="264" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=chkbgcolor status=SUCCESS method=MobSliderTestcase.chkbgcolor()[pri:0, instance:testCases.MobSliderTestcase@60bd273d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@121314f7]" started-at="2022-11-02T08:27:50 GST" name="aftermethod" finished-at="1970-01-01T04:00:00 GST" duration-ms="-1667363270412" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->

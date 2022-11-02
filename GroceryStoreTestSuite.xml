@@ -2,7 +2,7 @@
 <suite name="My Testsuite2">
 	<test name="ChromeTest1">
 		<parameter name="Browser" value="chrome"></parameter>
-	  	<classes>
+	  	<classes>  
 		
 			<class name="testCases.DashBoardTestCase"/>
 			<class name="testCases.LoginTestcase"/>

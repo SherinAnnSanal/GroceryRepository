@@ -10,7 +10,7 @@ public class DashBoardTestCase extends BaseClass{
 	LoginPage lp;
 	DashboardPage dp;
 	
-  @Test(groups= {"SmokeTest"})
+  @Test(groups= {"SmokeTest"},retryAnalyzer = retryTest.RetryAnalyzer.class)
   public void checkProfileName()
   {
 	  lp=new LoginPage(driver);
