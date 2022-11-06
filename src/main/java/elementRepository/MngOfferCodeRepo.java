@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -54,8 +55,11 @@ public class MngOfferCodeRepo
 	@FindBy(id="main_img")
 	WebElement fileUploadText;
 	
-	@FindBy(xpath="//button[@class='btn btn-danger']")
+	@FindBy(xpath=" //button[@type='submit']")
 	WebElement saveBtn;
+	
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
+	WebElement popupMsg;
 	
 	//WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(40));//explicit wait
 	public String addOffer() throws InterruptedException, IOException
@@ -73,14 +77,28 @@ public class MngOfferCodeRepo
 	
 	prop.load(fileIO);
 	String path=System.getProperty("user.dir") + prop.getProperty("imgPath");
+	System.out.println("got image");
 	gu.sendKey(fileUploadText,path);
-	gu.getClickElement(saveBtn);
-	System.out.println("Hello ..saved");
+	System.out.println("image pasted");
+	//gu.scrollDownOperation(driver);
+//	System.out.println("scrolled down");
+	//gu.getClickElement(saveBtn);
+	//System.out.println("Hello ..saved");
 	
-	// w.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn btn-danger']")));
+	
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	jse.executeScript("scroll(0, 250)"); // if the element is on bottom.
+	jse.executeScript("arguments[0].click();", saveBtn);
+	
+	
+	
+	 // WebDriverWait wait = new WebDriverWait(driver, 10); w
+	 //ait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@formcontrolname='reportingDealPermission']"))).click();
+	
+	 //w.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn btn-danger']"))).click();
 	// ac=new Actions(driver);
 //	ac.moveToElement(saveBtn).click().perform();
-	return codeTxt.getText();
+	return popupMsg.getText();
 	
 	}
 	public String  currentUrlPage()

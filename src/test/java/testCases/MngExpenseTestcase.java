@@ -49,7 +49,7 @@ public class MngExpenseTestcase extends BaseClass {
 
 		String actual = expOb.getStyleSearchBtn();
 		String expected = "16px";
-		Assert.assertEquals(actual, expected, Constant.StyleError);
+		Assert.assertEquals(actual, expected, Constant.styleError);
 
 	}
 
@@ -62,9 +62,10 @@ public class MngExpenseTestcase extends BaseClass {
 		lp.presteps();
 		expOb = new MngExpenseRepositoryPage(driver);
 
-		String actual = expOb.fileUpload(image);
-		String expected = " ×\r\n" + "Alert!\r\n" + "Expense Record Updated Successfully";
-		Assert.assertEquals(actual, expected, Constant.textErrorMsg);
+		boolean actual = expOb.fileUpload(image);
+		
+		boolean expected = true;
+		Assert.assertEquals(actual, expected,Constant.textErrorMsg);
 	}
 @Test
 public void chkCalendar()

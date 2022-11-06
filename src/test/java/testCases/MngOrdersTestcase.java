@@ -24,13 +24,13 @@ public class MngOrdersTestcase extends BaseClass {
 		List<WebElement> actual = mo.getListPayment();
 		String expected = "Bank";// mo.getSelectedPayment();
 		for (int i = 0; i < actual.size(); i++)
-			Assert.assertEquals(actual.get(i).getText(), expected, Constant.SelectError);
+			Assert.assertEquals(actual.get(i).getText(), expected, Constant.selectError);
 
 	}
 
 	@DataProvider(name = "data-provider")
 	public Object[][] dpMethod() {
-		return new Object[][] { { "Select" }, { "Paid2" }, { "Delivered" } };
+		return new Object[][] { { "Select" }, { "Paid" }, { "Delivered" } };
 	}
 
 	@Test(dataProvider = "data-provider")
@@ -44,7 +44,7 @@ public class MngOrdersTestcase extends BaseClass {
 		String actual = mo.getSelectedStatus(value);
 		//System.out.println("expected selected in testcase: "+expected);
 		for (int i = 0; i < expected.size(); i++) {
-			Assert.assertEquals(actual,expected.get(i),Constant.SelectError);
+			Assert.assertEquals(actual,expected.get(i),Constant.selectError);
 
 		}
 		// System.out.println("Hai");

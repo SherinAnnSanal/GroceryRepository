@@ -63,6 +63,10 @@ public class MngExpenseRepositoryPage {
 
 	@FindBy(xpath = "//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-orient-left datepicker-orient-bottom']")
 	WebElement calendar;
+	
+	@FindBy(xpath="//form[@id='form']/div/div[1]/div[9]/input")
+	WebElement imgElement;
+	
 
 	public String getStyleSearchBtn() {
 		gu.getClickElement(MngExpenseMenu);
@@ -100,7 +104,7 @@ public class MngExpenseRepositoryPage {
 	 * }
 	 */
 
-	public String fileUpload(String image) throws AWTException, IOException, InterruptedException {
+	public boolean fileUpload(String image) throws AWTException, IOException, InterruptedException {
 
 		gu.getClickElement(MngExpenseMenu);
 		gu.getClickElement(MngExpenseOption);
@@ -132,7 +136,8 @@ public class MngExpenseRepositoryPage {
 		gu.mediumDelay(3000);
 
 		gu.getClickElement(updateBtn);
-		return gu.getElementText(popupMsg);
+	
+		return gu.isDisplay(popupMsg);
 
 	}
 

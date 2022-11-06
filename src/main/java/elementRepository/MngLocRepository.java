@@ -29,10 +29,10 @@ public class MngLocRepository {
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	WebElement updateBtn;
 
-	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']/tbody/tr[2]/td[3]")
+	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[3]")
 	WebElement stateTxt;
 	
-	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[2]/td[5]/a/span")
+	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[4]/td[5]/a/span")
 	 WebElement statusBtn;
 	 
 	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[20]/td[4]")
@@ -42,6 +42,7 @@ public class MngLocRepository {
 		gu.getClickElement(mngLocMenu);
 		gu.getClickElement(editBtn);
 		gu.selectFuncbyVisibletext(editState, "Bristol");
+		System.out.println(gu.FirstSelectedOption(editState));
 		gu.getClickElement(updateBtn);
 		gu.mediumDelay(3000);
 		String stateText = gu.getElementText(stateTxt);

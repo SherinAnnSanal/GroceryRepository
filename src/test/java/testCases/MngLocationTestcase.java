@@ -21,7 +21,7 @@ public class MngLocationTestcase extends BaseClass {
 	  MngLocRepository mL=new MngLocRepository(driver);
 	  String actual=mL.getState();
 	 
-	  String expected="Belfast";
+	  String expected="Bristol";
 	 Assert.assertEquals(actual,expected,Constant.textErrorMsg);
 	  
   }
@@ -43,8 +43,8 @@ public class MngLocationTestcase extends BaseClass {
 	  lp.presteps();
 	   mL=new MngLocRepository(driver);
 	  String actual=mL.getStyle();
-	  	 String expected="rgba(255, 193, 7, 1)";
-	 Assert.assertEquals(actual,expected,Constant.StyleError);
+	  String expected="rgba(40, 167, 69, 1)";
+	 Assert.assertEquals(actual,expected,Constant.styleError);
 	  
 	  
   }

@@ -2,8 +2,10 @@ package testCases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constant;
 import elementRepository.LoginPage;
 import elementRepository.MngOfferCodeRepo;
 
@@ -18,7 +20,11 @@ public class MngOfferCodeTestcase extends BaseClass {
 		lp.presteps();
 		moc = new MngOfferCodeRepo(driver);
 		String actual = moc.addOffer();
-		System.out.println(actual);
+		String expected="×\n"
+				+ "Alert!\n"
+				+ "Offer Created Successfully";
+		Assert.assertEquals(actual, expected, Constant.textErrorMsg);
+		//System.out.println(actual);
 
 	}
 

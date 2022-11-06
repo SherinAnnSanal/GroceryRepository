@@ -16,9 +16,22 @@ public class MobSliderTestcase extends BaseClass {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		ms = new MobSliderRepo(driver);
-		String path=System.getProperty("user.dir") + "//src//main//resources//Images//image.jpg";
-		boolean img = ms.verifyImageUpload(path);
-		System.out.println(img);
+		String path = System.getProperty("user.dir") + "//src//main//resources//Images//image.jpg";
+		boolean actual = ms.verifyImageUpload(path);
+		boolean expected = true;
+		Assert.assertEquals(actual, expected, Constant.uploadError);
+	}
+
+	@Test
+	public void uploadBigImage() throws InterruptedException {
+		lp = new LoginPage(driver);
+		lp.presteps();
+		ms = new MobSliderRepo(driver);
+		String imgPath = System.getProperty("user.dir") + "//src/main//resources//Images//DSC02642.JPG";
+		boolean actual = ms.uploadBigSizeImage(imgPath);
+		boolean expected = true;
+		Assert.assertEquals(actual, expected, Constant.uploadError);
+
 	}
 
 	@Test
@@ -38,7 +51,7 @@ public class MobSliderTestcase extends BaseClass {
 		ms = new MobSliderRepo(driver);
 		boolean actual = ms.chkStatusBtnPresent();
 		boolean expected = true;
-		Assert.assertEquals(actual, expected, Constant.StatusError);
+		Assert.assertEquals(actual, expected, Constant.statusError);
 
 	}
 
@@ -49,7 +62,7 @@ public class MobSliderTestcase extends BaseClass {
 		ms = new MobSliderRepo(driver);
 		String actual = ms.getBgColor();
 		String expected = "rgba(220, 53, 69, 1)";
-		Assert.assertEquals(actual, expected, Constant.StyleError);
+		Assert.assertEquals(actual, expected, Constant.styleError);
 
 	}
 }

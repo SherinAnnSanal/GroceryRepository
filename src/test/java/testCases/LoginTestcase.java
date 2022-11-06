@@ -13,26 +13,26 @@ import elementRepository.LoginPage;
 public class LoginTestcase extends BaseClass {
 
 	LoginPage lp;
-	List<String>loginList;
+	List<String> loginList;
 
 	@DataProvider(name = "data")
 	private Object[][] getUserData() {
-		return new Object[][] { { "admin", "admin" }, { "admin2", "admin3" }};
+		return new Object[][] { { "admin", "admin" }, { "admin2", "admin3" } };
 	}
 
 	@Test
-	//(dataProvider = "data")
-	//public void verifyLoggedUsers(String username, String Password) throws InterruptedException 
-	public void verifyLoggedUsers() throws InterruptedException 
-	{
+	// (dataProvider = "data")
+	// public void verifyLoggedUsers(String username, String Password) throws
+	// InterruptedException
+	public void verifyLoggedUsers() throws InterruptedException {
 		lp = new LoginPage(driver);
-		
-		//Test data from excel file
-		loginList=lp.getLoginDetails();
+
+		// Test data from excel file
+		loginList = lp.getLoginDetails();
 		lp.getUserName(loginList.get(0));
 		lp.getPassWord(loginList.get(1));
-		//Direct Login
-		/* 
+		// Direct Login
+		/*
 		 * lp.getUserName(username); lp.getPassWord(Password);
 		 */
 		lp.clickSignin();
@@ -41,11 +41,11 @@ public class LoginTestcase extends BaseClass {
 
 		String actual = lp.profileVerification();
 		String expected = "Admin";
-		Assert.assertEquals(expected, actual,Constant.titleErrorMsg);
+		Assert.assertEquals(expected, actual, Constant.titleErrorMsg);
 
 	}
 
-	@Test(groups={"SmokeTest"})
+	@Test(groups = { "SmokeTest" })
 	public void verifyLoggedUsers1() throws InterruptedException {
 		lp = new LoginPage(driver);
 		boolean actual = lp.textArea_username();
@@ -53,7 +53,7 @@ public class LoginTestcase extends BaseClass {
 		Assert.assertEquals(actual, expected, "textarea is disbaled");
 
 	}
-	
+
 	@Test
 	public void verifyCheckBox() throws InterruptedException {
 		lp = new LoginPage(driver);
@@ -62,14 +62,5 @@ public class LoginTestcase extends BaseClass {
 		Assert.assertEquals(actual, expected, "RememberMe checkbox is selected");
 
 	}
-	
-	
-	/*
-	 * @Test public void verifyDashboardElements() { DashboardPage dp=new
-	 * DashboardPage(driver); String actual=dp.getColorHome(); String expected =
-	 * "Admin"; Assert.assertEquals(expected, actual, "color is not same");
-	 * 
-	 * }
-	 */
 
 }

@@ -4,13 +4,13 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.LoginTestcase">
+      <class name="testCases.MobSliderTestcase">
         <methods>
+          <include name="uploadBigImage"/>
           <include name="beforemethod"/>
-          <include name="verifyLoggedUsers"/>
           <include name="aftermethod"/>
         </methods>
-      </class> <!-- testCases.LoginTestcase -->
+      </class> <!-- testCases.MobSliderTestcase -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [My Testsuite] -->

@@ -4,53 +4,14 @@
   <test thread-count="5" name="ChromeTest1(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.MobSliderTestcase">
-        <methods>
-          <include name="chkImagePresent"/>
-          <include name="beforemethod"/>
-          <include name="aftermethod"/>
-          <include name="chkStatus"/>
-          <include name="chkbgcolor"/>
-          <include name="chkTitle"/>
-        </methods>
-      </class> <!-- testCases.MobSliderTestcase -->
       <class name="testCases.MngLocationTestcase">
         <methods>
           <include name="getBgColor"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
+          <include name="chkStatus"/>
         </methods>
       </class> <!-- testCases.MngLocationTestcase -->
-      <class name="testCases.MngOfferCodeTestcase">
-        <methods>
-          <include name="chkAddOffer"/>
-          <include name="beforemethod"/>
-          <include name="aftermethod"/>
-        </methods>
-      </class> <!-- testCases.MngOfferCodeTestcase -->
-      <class name="testCases.MngOrdersTestcase">
-        <methods>
-          <include name="beforemethod"/>
-          <include name="aftermethod"/>
-          <include name="chkElementsStatus" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- testCases.MngOrdersTestcase -->
-      <class name="testCases.PushNotificationTestcase">
-        <methods>
-          <include name="chkBgColor"/>
-          <include name="chkText"/>
-          <include name="beforemethod"/>
-          <include name="aftermethod"/>
-          <include name="chkMsg"/>
-        </methods>
-      </class> <!-- testCases.PushNotificationTestcase -->
-      <class name="testCases.MngExpenseTestcase">
-        <methods>
-          <include name="chkFileUpload"/>
-          <include name="beforemethod"/>
-          <include name="aftermethod"/>
-        </methods>
-      </class> <!-- testCases.MngExpenseTestcase -->
     </classes>
   </test> <!-- ChromeTest1(failed) -->
 </suite> <!-- Failed suite [My Testsuite2] -->
