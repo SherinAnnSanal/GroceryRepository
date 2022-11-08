@@ -4,13 +4,11 @@
 		<parameter name="Browser" value="chrome"></parameter>
 	  	<classes>
 		
-			<class name="testCases.AdminUsersTestcase">
+			<class name="testCases.MngLocationTestcase">
+			
 			<methods>
-			<include name="validateUniqueUserName"/>
-			
-			
+			<include name=/>
 			</methods>
-			
 			
 			</class>
 		</classes>

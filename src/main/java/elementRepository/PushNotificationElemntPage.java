@@ -46,12 +46,12 @@ public class PushNotificationElemntPage {
 
 	}
 
-	public String getMsgfromAlert() {
+	public boolean getMsgfromAlert() {
 		gu.getClickElement(PushMenu);
 		gu.sendKey(titleTxtBox, "Offers");
 		gu.sendKey(descTxtBox, "Summer Offer:50%");
 		gu.getClickElement(sendBtn);
-		return gu.getElementText(msg);
+		return gu.isDisplay(msg);
 
 	}
 

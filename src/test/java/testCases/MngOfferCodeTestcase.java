@@ -19,10 +19,8 @@ public class MngOfferCodeTestcase extends BaseClass {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		moc = new MngOfferCodeRepo(driver);
-		String actual = moc.addOffer();
-		String expected="×\n"
-				+ "Alert!\n"
-				+ "Offer Created Successfully";
+		boolean actual = moc.addOffer();
+		boolean expected=true;
 		Assert.assertEquals(actual, expected, Constant.textErrorMsg);
 		//System.out.println(actual);
 

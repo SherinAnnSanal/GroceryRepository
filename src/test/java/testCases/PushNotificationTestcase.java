@@ -41,9 +41,8 @@ public class PushNotificationTestcase extends BaseClass {
 		lp.presteps();
 		pushObj = new PushNotificationElemntPage(driver);
 
-		String actual = pushObj.getMsgfromAlert();
-		System.out.println(actual);
-		String expected = "×\n" + "Alert!\n" + "Message send successfully";
+		boolean actual = pushObj.getMsgfromAlert();
+		boolean expected = true;
 		Assert.assertEquals(expected, actual, Constant.textErrorMsg);
 
 	}

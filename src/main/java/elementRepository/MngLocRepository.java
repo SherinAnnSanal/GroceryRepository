@@ -32,10 +32,10 @@ public class MngLocRepository {
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[3]")
 	WebElement stateTxt;
 	
-	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[4]/td[5]/a/span")
+	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[11]/td[5]/a//span[@class='badge bg-success']")
 	 WebElement statusBtn;
 	 
-	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[20]/td[4]")
+	 @FindBy(xpath="//td[text()='Street20']//following-sibling::td[text()='United Kingdom']//following-sibling::td[text()='Craven Arms']//following-sibling::td[contains(text(),'100')]")
 	 WebElement txtCharge;
 
 	public String getState() throws InterruptedException {
