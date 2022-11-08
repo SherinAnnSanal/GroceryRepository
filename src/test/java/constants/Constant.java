@@ -11,5 +11,7 @@ public class Constant {
 	public static final String selectError = "Selected option and expected are not matching";
 	public static final String statusError = "Status mismatch";
 	public static final String uploadError="Image not uploaded";
+	public static final String dropdownItemsError="Items in dropdown are not matching";
+	public static final String notUniqueError="Username is not unique.Duplicate values are added";
 
 }

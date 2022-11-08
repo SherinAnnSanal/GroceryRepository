@@ -51,7 +51,7 @@ public class MngOrdersRepo {
 		return selected;
 	}
 
-	public List getListPayment() {
+	public List<WebElement> getListPayment() {
 		gu.getClickElement(mngOrderMenu);
 		gu.getClickElement(searchBtn);
 		gu.selectFuncbyVisibletext(paymentDropdown, "Bank");
@@ -60,23 +60,41 @@ public class MngOrdersRepo {
 		return listPayment;
 
 	}
-
-	public String getSelectedStatus(String s) {
-		gu.getClickElement(mngOrderMenu);
-		gu.getClickElement(searchBtn);
-		String actual=gu.selectFuncbyVisibletext(statusDropdown, s);
-		return actual;
-	}
+	
 
 	public List<String> getListStatus() {
 		List<String> list1 = new ArrayList();
-		gu.addList("Select");
-		gu.addList("Paid");
-		gu.addList("unpaid");
-		gu.addList("Delivered");
-		gu.addList("Out For Delivery");
+		list1=gu.addList(list1,"Select");
+		list1=gu.addList(list1,"Paid");
+		list1=gu.addList(list1,"unpaid");
+		list1=gu.addList(list1,"Delivered");
+		list1=gu.addList(list1,"Out For Delivery");
+		System.out.println("list:"+list1);
 				return list1;
 
 	}
 
+	public boolean compStringToStrList(String s) {
+		boolean flag = false;
+		gu.getClickElement(mngOrderMenu);
+		gu.getClickElement(searchBtn);
+		String actual = gu.selectFuncbyVisibletext(statusDropdown, s);
+		List<String> expected = getListStatus();
+		if (expected.contains(actual)) {
+			flag = true;
+		}
+
+		return flag;
+		/*
+		 * for(int i=0;i<expected.size();i++) { flag=false; if
+		 * (actual.equals(expected.get(i))) { flag=true; break;
+		 * 
+		 * }
+		 * 
+		 * }
+		 * 
+		 * return flag; }
+		 */
+
+	}
 }

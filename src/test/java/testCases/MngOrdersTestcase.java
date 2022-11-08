@@ -30,7 +30,7 @@ public class MngOrdersTestcase extends BaseClass {
 
 	@DataProvider(name = "data-provider")
 	public Object[][] dpMethod() {
-		return new Object[][] { { "Select" }, { "Paid" }, { "Delivered" } };
+		return new Object[][] { { "Select" }, { "Out For Delivery" }, { "Delivered" } };
 	}
 
 	@Test(dataProvider = "data-provider")
@@ -38,17 +38,14 @@ public class MngOrdersTestcase extends BaseClass {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		mo = new MngOrdersRepo(driver);
-		System.out.println("List in testcase");
-		List<String> expected = mo.getListStatus();
-		//System.out.println(expected);
-		String actual = mo.getSelectedStatus(value);
-		//System.out.println("expected selected in testcase: "+expected);
-		for (int i = 0; i < expected.size(); i++) {
-			Assert.assertEquals(actual,expected.get(i),Constant.selectError);
+		boolean actual=mo.compStringToStrList(value);
+		boolean expected=true;
+		
+			Assert.assertEquals(actual, expected, Constant.selectError);
 
 		}
 		// System.out.println("Hai");
 
-	}
+	
 
 }

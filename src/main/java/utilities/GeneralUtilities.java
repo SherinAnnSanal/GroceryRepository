@@ -64,7 +64,6 @@ public class GeneralUtilities {
 		select.selectByVisibleText(visibletext);
 		WebElement selectedValue = select.getFirstSelectedOption();
 		// List <WebElement>dropList=select.getOptions();
-
 		return (selectedValue.getText());
 
 	}
@@ -75,14 +74,27 @@ public class GeneralUtilities {
 		return (firstoption);
 	}
 
-	public List getAllOptions(Select s) {
+	public List<WebElement> getAllOptions(Select s) {
 
 		List<WebElement> op = s.getOptions();
 
 		return op;
 
 	}
+	
+	
+	public List<String> convertToStringList(List<WebElement> weList) {
+		List<String> strList = new ArrayList<String>();
+		for (int i = 0; i < weList.size(); i++) {
 
+			strList.add(weList.get(i).getText());
+		}
+
+		return strList;
+
+	}
+
+	
 	public String stylePropertyValidation(WebElement element, String propertyType) {
 		return element.getCssValue(propertyType);
 	}
@@ -91,9 +103,9 @@ public class GeneralUtilities {
 		return element.isSelected();
 	}
 
-	List<String> list = new ArrayList<>();
+	//List<String> list = new ArrayList<>();
 
-	public List<String> addList(String s) {
+	public List<String> addList(List<String>list,String s) {
 
 		list.add(s);
 
@@ -111,12 +123,12 @@ public class GeneralUtilities {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,2500)");
 	}
-	public boolean getElementTextList(List<WebElement> actuallist, String element) {
+	public boolean getElementTextList(List<WebElement> chkList, String element) {
 
 		boolean value = true;
-		for (int i = 0; i < actuallist.size(); i++) {
+		for (int i = 0; i < chkList.size(); i++) {
 
-			String text = actuallist.get(i).getText();
+			String text = chkList.get(i).getText();
 
 			if (!text.equals(element))
 

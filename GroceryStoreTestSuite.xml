@@ -13,6 +13,7 @@
 			<class name="testCases.MngOrdersTestcase"/>
 			<class name="testCases.MobSliderTestcase"/>
 			<class name="testCases.PushNotificationTestcase"/>
+			<class name="testCases.AdminUsersTestcase"/>
 			
 			
 		

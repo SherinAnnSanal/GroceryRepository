@@ -4,10 +4,10 @@
 		<parameter name="Browser" value="chrome"></parameter>
 	  	<classes>
 		
-			<class name="testCases.MngLocationTestcase">
+			<class name="testCases.AdminUsersTestcase">
 			<methods>
-			<include name="chkStatus"/>
-			<include name="getBgColor"/>
+			<include name="validateUniqueUserName"/>
+			
 			
 			</methods>
 			
