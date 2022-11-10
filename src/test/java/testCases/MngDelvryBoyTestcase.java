@@ -20,7 +20,6 @@ ManageDeliveryBoyPage mngDB;
 	  lp.presteps();
 	  mngDB=new ManageDeliveryBoyPage(driver);
 	  
-	  
 	  String actual=mngDB.getBgColor();
 	//  System.out.println("bgcolor=" +actual);
 	  String expected="rgba(255, 193, 7, 1)";

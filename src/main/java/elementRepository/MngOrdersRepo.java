@@ -80,21 +80,22 @@ public class MngOrdersRepo {
 		gu.getClickElement(searchBtn);
 		String actual = gu.selectFuncbyVisibletext(statusDropdown, s);
 		List<String> expected = getListStatus();
-		if (expected.contains(actual)) {
-			flag = true;
+		if(expected.contains(actual))
+		{
+			 flag=true;
 		}
 
-		return flag;
 		/*
-		 * for(int i=0;i<expected.size();i++) { flag=false; if
-		 * (actual.equals(expected.get(i))) { flag=true; break;
+		 * for (int i = 0; i < expected.size(); i++) { flag = false; if
+		 * (actual.equals(expected.get(i))) { flag = true; break;
 		 * 
 		 * }
 		 * 
 		 * }
-		 * 
-		 * return flag; }
 		 */
-
+		  return flag;
+		 
 	}
+
 }
+

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [My Testsuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ChromeTest(failed)">
+<suite name="Failed suite [My Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtendreportUtils"/>
+  </listeners>
+  <test thread-count="5" name="My Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="testCases.MngLocationTestcase">
         <methods>
-          <include name="getBgColor"/>
+          <include name="getDelCharge"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
         </methods>
       </class> <!-- testCases.MngLocationTestcase -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [My Testsuite] -->
+  </test> <!-- My Test(failed) -->
+</suite> <!-- Failed suite [My Test Suite] -->

@@ -4,10 +4,10 @@
 		<parameter name="Browser" value="chrome"></parameter>
 	  	<classes>
 		
-			<class name="testCases.MngLocationTestcase">
+			<class name="testCases.MngOrdersTestcase">
 			
 			<methods>
-			<include name=/>
+			<include name="chkElementsStatus"/>
 			</methods>
 			
 			</class>

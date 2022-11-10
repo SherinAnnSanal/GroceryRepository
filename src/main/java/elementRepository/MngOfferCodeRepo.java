@@ -16,6 +16,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import utilities.GeneralUtilities;
 
 public class MngOfferCodeRepo
@@ -61,7 +62,7 @@ public class MngOfferCodeRepo
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement popupMsg;
 	
-	//WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(40));//explicit wait
+	
 	public boolean addOffer() throws InterruptedException, IOException {
 		gu.getClickElement(mngOffercodeMenu);
 		gu.getClickElement(newBtn);
@@ -88,14 +89,8 @@ public class MngOfferCodeRepo
 		jse.executeScript("scroll(0, 250)"); // if the element is on bottom.
 		jse.executeScript("arguments[0].click();", saveBtn);
 
-		// WebDriverWait wait = new WebDriverWait(driver, 10); w
-		// ait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@formcontrolname='reportingDealPermission']"))).click();
+		 
 
-		// w.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn
-		// btn-danger']"))).click();
-		// ac=new Actions(driver);
-//	ac.moveToElement(saveBtn).click().perform();
-		
 		return gu.isDisplay(popupMsg);
 
 	}

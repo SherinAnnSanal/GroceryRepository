@@ -7,13 +7,13 @@
   <test thread-count="5" name="My Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.MngDelvryBoyTestcase">
+      <class name="testCases.MngLocationTestcase">
         <methods>
+          <include name="getDelCharge"/>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="chkName"/>
         </methods>
-      </class> <!-- testCases.MngDelvryBoyTestcase -->
+      </class> <!-- testCases.MngLocationTestcase -->
     </classes>
   </test> <!-- My Test(failed) -->
 </suite> <!-- Failed suite [My Test Suite] -->

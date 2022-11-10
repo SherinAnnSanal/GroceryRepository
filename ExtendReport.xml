@@ -6,7 +6,18 @@
 	<test name="My Test">
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCases.MngDelvryBoyTestcase" />
+			<class name="testCases.DashBoardTestCase"/>
+			<class name="testCases.LoginTestcase"/>
+			<class name="testCases.MngLocationTestcase"/>
+			<class name="testCases.MngDelvryBoyTestcase"/>
+			<class name="testCases.MngExpenseTestcase"/>
+			<class name="testCases.MngOfferCodeTestcase"/>
+			<class name="testCases.MngOrdersTestcase"/>
+			<class name="testCases.MobSliderTestcase"/>
+			<class name="testCases.PushNotificationTestcase"/>
+			<class name="testCases.AdminUsersTestcase"/>
+			
+			
 		</classes>
 	</test>
 </suite>
