@@ -68,8 +68,14 @@ public class MngExpenseTestcase extends BaseClass {
 		Assert.assertEquals(actual, expected,Constant.textErrorMsg);
 	}
 @Test
-public void chkCalendar()
+public void chkCalendar() throws InterruptedException
 {
+	lp = new LoginPage(driver);
+	lp.presteps();
+	expOb = new MngExpenseRepositoryPage(driver);
+	expOb.setDate();
+
+	
 	
 }
 }

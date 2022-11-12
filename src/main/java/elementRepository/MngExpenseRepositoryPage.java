@@ -67,6 +67,8 @@ public class MngExpenseRepositoryPage {
 	@FindBy(xpath="//form[@id='form']/div/div[1]/div[9]/input")
 	WebElement imgElement;
 	
+	
+	
 
 	public String getStyleSearchBtn() {
 		gu.getClickElement(MngExpenseMenu);
@@ -85,24 +87,27 @@ public class MngExpenseRepositoryPage {
 		return bgColor;
 	}
 
-	/*
-	 * public String editCalendar() { gu.getClickElement(MngExpenseMenu);
-	 * gu.getClickElement(MngExpenseOption); gu.getClickElement(editBtn);
-	 * gu.getClickElement(dateTxtBox);
-	 * while(!driver.findElement(By.cssSelector("span.ui-datepicker-month")).getText
-	 * ().contains("April"))//also can use equalsIgnoreCase instead of contains {
-	 * driver.findElement(By.
-	 * xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); }
-	 * 
-	 * int count=driver.findElements(By.className("ui-state-default")).size();
-	 * for(int i=0;i<count;i++) { String
-	 * text=driver.findElements(By.className("ui-state-default")).get(i).getText();
-	 * if(text.equalsIgnoreCase("27")) {
-	 * driver.findElements(By.className("ui-state-default")).get(i).click(); break;
-	 * }
-	 * 
-	 * }
-	 */
+	
+	  public void setDate() throws InterruptedException
+	  {
+	  gu.getClickElement(MngExpenseMenu);
+	  gu.getClickElement(MngExpenseOption); 
+	  gu.getClickElement(editBtn);
+	  //gu.getClickElement(dateTxtBox);
+	  System.out.println("near text box");
+	  dateTxtBox.clear();
+	  System.out.println("cleared");
+	  gu.sendKey(dateTxtBox, "21-09-2021");
+	  System.out.println("send key done");
+	  JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)");
+
+		gu.mediumDelay(3000);
+
+		gu.getClickElement(updateBtn);
+	  
+}
+
 
 	public boolean fileUpload(String image) throws AWTException, IOException, InterruptedException {
 

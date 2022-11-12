@@ -4,13 +4,13 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.MngOrdersTestcase">
+      <class name="testCases.MngExpenseTestcase">
         <methods>
           <include name="beforemethod"/>
           <include name="aftermethod"/>
-          <include name="chkElementsStatus" invocation-numbers="0"/>
+          <include name="chkCalendar"/>
         </methods>
-      </class> <!-- testCases.MngOrdersTestcase -->
+      </class> <!-- testCases.MngExpenseTestcase -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [My Testsuite] -->
