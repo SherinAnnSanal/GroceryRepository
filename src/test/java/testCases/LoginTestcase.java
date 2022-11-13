@@ -19,11 +19,9 @@ public class LoginTestcase extends BaseClass {
 	private Object[][] getUserData() {
 		return new Object[][] { { "admin", "admin" }, { "admin2", "admin3" } };
 	}
+	
 
 	@Test
-	// (dataProvider = "data")
-	// public void verifyLoggedUsers(String username, String Password) throws
-	// InterruptedException
 	public void verifyLoggedUsers() throws InterruptedException {
 		lp = new LoginPage(driver);
 
@@ -31,10 +29,29 @@ public class LoginTestcase extends BaseClass {
 		loginList = lp.getLoginDetails();
 		lp.getUserName(loginList.get(0));
 		lp.getPassWord(loginList.get(1));
+		lp.clickSignin();
+
+		// lp.presteps();
+
+		String actual = lp.profileVerification();
+		String expected = "Admin";
+		Assert.assertEquals(expected, actual, Constant.titleErrorMsg);
+
+	}
+	
+	
+	@Test
+	(dataProvider = "data")
+	 public void verifyLoggedUsers(String username, String Password) throws
+	 InterruptedException
+ {
+		lp = new LoginPage(driver);
+
+		
 		// Direct Login
-		/*
-		 * lp.getUserName(username); lp.getPassWord(Password);
-		 */
+		
+		  lp.getUserName(username); lp.getPassWord(Password);
+		 
 		lp.clickSignin();
 
 		// lp.presteps();

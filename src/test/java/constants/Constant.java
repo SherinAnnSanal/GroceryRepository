@@ -15,5 +15,5 @@ public class Constant {
 	public static final String notUniqueError="Username is not unique.Duplicate values are added";
 	public static final String updateError="Not updated";
 	public static final String delError="Not deleted";
-
+public static final String addError="Could not be added";
 }

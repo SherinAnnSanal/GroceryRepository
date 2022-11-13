@@ -4,13 +4,13 @@
   <test thread-count="5" name="ChromeTest1(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.MngOfferCodeTestcase">
+      <class name="testCases.LoginTestcase">
         <methods>
-          <include name="chkAddOffer"/>
           <include name="beforemethod"/>
+          <include name="verifyLoggedUsers" invocation-numbers="1"/>
           <include name="aftermethod"/>
         </methods>
-      </class> <!-- testCases.MngOfferCodeTestcase -->
+      </class> <!-- testCases.LoginTestcase -->
     </classes>
   </test> <!-- ChromeTest1(failed) -->
 </suite> <!-- Failed suite [My Testsuite2] -->

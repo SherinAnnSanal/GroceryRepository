@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>30/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>36/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 08 16:06:36 GST 2022</td>
+<td>Started on:</td><td>Sun Nov 13 10:45:56 GST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>447 seconds (447741 ms)</td>
+<tr><td>Total time:</td><td>883 seconds (883579 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.MngOfferCodeTestcase.chkAddOffer()'><b>chkAddOffer</b><br>Test class: testCases.MngOfferCodeTestcase</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
-  (Session info: chrome=107.0.5304.88)
+<td title='testCases.LoginTestcase.verifyLoggedUsers()'><b>verifyLoggedUsers</b><br>Test class: testCases.LoginTestcase<br>Parameters: admin2, admin3</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-toggle=&apos;dropdown&apos;]&quot;}
+  (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;DESKTOP-0ILCENT&apos;, ip: &apos;192.168.100.14&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f252278fff837428f1b47aed6e2f610e, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52815/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f252278fff837428f1b47aed6e2f610e
+Command: [82ee9e6c5df26bd4ea2d0cddabd4ad4b, findElement {using=xpath, value=//a[@data-toggle=&apos;dropdown&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51864/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82ee9e6c5df26bd4ea2d0cddabd4ad4b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -99,19 +99,20 @@ Session ID: f252278fff837428f1b47aed6e2f610e
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
-	at elementRepository.MngOfferCodeRepo.addOffer(MngOfferCodeRepo.java:101)
-	at testCases.MngOfferCodeTestcase.chkAddOffer(MngOfferCodeTestcase.java:22)
+	at utilities.GeneralUtilities.getElementText(GeneralUtilities.java:20)
+	at elementRepository.LoginPage.profileVerification(LoginPage.java:77)
+	at testCases.LoginTestcase.verifyLoggedUsers(LoginTestcase.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340285255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace340285255'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
-  (Session info: chrome=107.0.5304.88)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1565601243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565601243'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-toggle=&apos;dropdown&apos;]&quot;}
+  (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;DESKTOP-0ILCENT&apos;, ip: &apos;192.168.100.14&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f252278fff837428f1b47aed6e2f610e, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52815/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f252278fff837428f1b47aed6e2f610e
+Command: [82ee9e6c5df26bd4ea2d0cddabd4ad4b, findElement {using=xpath, value=//a[@data-toggle=&apos;dropdown&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\sanal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51864/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82ee9e6c5df26bd4ea2d0cddabd4ad4b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,8 +132,9 @@ Session ID: f252278fff837428f1b47aed6e2f610e
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
-	at elementRepository.MngOfferCodeRepo.addOffer(MngOfferCodeRepo.java:101)
-	at testCases.MngOfferCodeTestcase.chkAddOffer(MngOfferCodeTestcase.java:22)
+	at utilities.GeneralUtilities.getElementText(GeneralUtilities.java:20)
+	at elementRepository.LoginPage.profileVerification(LoginPage.java:77)
+	at testCases.LoginTestcase.verifyLoggedUsers(LoginTestcase.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,8 +164,8 @@ Session ID: f252278fff837428f1b47aed6e2f610e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>18</td>
-<td>testCases.MngOfferCodeTestcase@5e600dd5</td></tr>
+<td>10</td>
+<td>testCases.LoginTestcase@130c12b7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -173,155 +175,185 @@ Session ID: f252278fff837428f1b47aed6e2f610e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.MngLocationTestcase.getDelCharge()'><b>getDelCharge</b><br>Test class: testCases.MngLocationTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.MngLocationTestcase@60bd273d</td></tr>
-<tr>
-<td title='testCases.LoginTestcase.verifyCheckBox()'><b>verifyCheckBox</b><br>Test class: testCases.LoginTestcase</td>
-<td></td>
-<td>0</td>
-<td>testCases.LoginTestcase@5a45133e</td></tr>
-<tr>
-<td title='testCases.MobSliderTestcase.uploadBigImage()'><b>uploadBigImage</b><br>Test class: testCases.MobSliderTestcase</td>
-<td></td>
-<td>27</td>
-<td>testCases.MobSliderTestcase@5d534f5d</td></tr>
-<tr>
-<td title='testCases.MngExpenseTestcase.chkFileUpload()'><b>chkFileUpload</b><br>Test class: testCases.MngExpenseTestcase</td>
-<td></td>
-<td>18</td>
-<td>testCases.MngExpenseTestcase@130c12b7</td></tr>
-<tr>
-<td title='testCases.MobSliderTestcase.chkStatus()'><b>chkStatus</b><br>Test class: testCases.MobSliderTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.MobSliderTestcase@5d534f5d</td></tr>
-<tr>
-<td title='testCases.PushNotificationTestcase.chkBgColor()'><b>chkBgColor</b><br>Test class: testCases.PushNotificationTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.PushNotificationTestcase@2e3967ea</td></tr>
-<tr>
-<td title='testCases.AdminUsersTestcase.compUserTypes()'><b>compUserTypes</b><br>Test class: testCases.AdminUsersTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.AdminUsersTestcase@70e9c95d</td></tr>
-<tr>
-<td title='testCases.LoginTestcase.verifyLoggedUsers1()'><b>verifyLoggedUsers1</b><br>Test class: testCases.LoginTestcase</td>
-<td></td>
-<td>0</td>
-<td>testCases.LoginTestcase@5a45133e</td></tr>
-<tr>
-<td title='testCases.MobSliderTestcase.chkbgcolor()'><b>chkbgcolor</b><br>Test class: testCases.MobSliderTestcase</td>
-<td></td>
-<td>6</td>
-<td>testCases.MobSliderTestcase@5d534f5d</td></tr>
-<tr>
-<td title='testCases.DashBoardTestCase.checkEnableBar()'><b>checkEnableBar</b><br>Test class: testCases.DashBoardTestCase</td>
-<td></td>
-<td>1</td>
-<td>testCases.DashBoardTestCase@3c7f66c4</td></tr>
-<tr>
-<td title='testCases.MngOrdersTestcase.chkElementsStatus()'><b>chkElementsStatus</b><br>Test class: testCases.MngOrdersTestcase<br>Parameters: Out For Delivery</td>
-<td></td>
-<td>2</td>
-<td>testCases.MngOrdersTestcase@576d5deb</td></tr>
-<tr>
-<td title='testCases.MngDelvryBoyTestcase.chkToolTip()'><b>chkToolTip</b><br>Test class: testCases.MngDelvryBoyTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.MngDelvryBoyTestcase@121314f7</td></tr>
-<tr>
-<td title='testCases.PushNotificationTestcase.chkText()'><b>chkText</b><br>Test class: testCases.PushNotificationTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.PushNotificationTestcase@2e3967ea</td></tr>
-<tr>
-<td title='testCases.MngOrdersTestcase.chkElementsStatus()'><b>chkElementsStatus</b><br>Test class: testCases.MngOrdersTestcase<br>Parameters: Delivered</td>
-<td></td>
-<td>3</td>
-<td>testCases.MngOrdersTestcase@576d5deb</td></tr>
-<tr>
-<td title='testCases.MngDelvryBoyTestcase.chkBgColor()'><b>chkBgColor</b><br>Test class: testCases.MngDelvryBoyTestcase</td>
-<td></td>
-<td>5</td>
-<td>testCases.MngDelvryBoyTestcase@121314f7</td></tr>
-<tr>
-<td title='testCases.MngOrdersTestcase.chkSrchByPaymentMode()'><b>chkSrchByPaymentMode</b><br>Test class: testCases.MngOrdersTestcase</td>
-<td></td>
-<td>4</td>
-<td>testCases.MngOrdersTestcase@576d5deb</td></tr>
-<tr>
-<td title='testCases.MngExpenseTestcase.chkCalendar()'><b>chkCalendar</b><br>Test class: testCases.MngExpenseTestcase</td>
-<td></td>
-<td>0</td>
-<td>testCases.MngExpenseTestcase@130c12b7</td></tr>
-<tr>
 <td title='testCases.MngDelvryBoyTestcase.chkName()'><b>chkName</b><br>Test class: testCases.MngDelvryBoyTestcase</td>
 <td></td>
-<td>2</td>
-<td>testCases.MngDelvryBoyTestcase@121314f7</td></tr>
+<td>1</td>
+<td>testCases.MngDelvryBoyTestcase@2e3967ea</td></tr>
 <tr>
-<td title='testCases.MngOrdersTestcase.chkElementsStatus()'><b>chkElementsStatus</b><br>Test class: testCases.MngOrdersTestcase<br>Parameters: Select</td>
-<td></td>
-<td>2</td>
-<td>testCases.MngOrdersTestcase@576d5deb</td></tr>
-<tr>
-<td title='testCases.MngLocationTestcase.chkStateselected()'><b>chkStateselected</b><br>Test class: testCases.MngLocationTestcase</td>
-<td></td>
-<td>8</td>
-<td>testCases.MngLocationTestcase@60bd273d</td></tr>
-<tr>
-<td title='testCases.DashBoardTestCase.checkProfileName()'><b>checkProfileName</b><br>Test class: testCases.DashBoardTestCase</td>
+<td title='testCases.MobSliderTestcase.chkTitle()'><b>chkTitle</b><br>Test class: testCases.MobSliderTestcase</td>
 <td></td>
 <td>1</td>
-<td>testCases.DashBoardTestCase@3c7f66c4</td></tr>
+<td>testCases.MobSliderTestcase@6fdbe764</td></tr>
 <tr>
 <td title='testCases.DashBoardTestCase.checkColorHomeBtn()'><b>checkColorHomeBtn</b><br>Test class: testCases.DashBoardTestCase</td>
 <td></td>
 <td>1</td>
-<td>testCases.DashBoardTestCase@3c7f66c4</td></tr>
+<td>testCases.DashBoardTestCase@4803b726</td></tr>
 <tr>
-<td title='testCases.MobSliderTestcase.chkTitle()'><b>chkTitle</b><br>Test class: testCases.MobSliderTestcase</td>
+<td title='testCases.MngLocationTestcase.chkDelLocation()'><b>chkDelLocation</b><br>Test class: testCases.MngLocationTestcase</td>
 <td></td>
 <td>2</td>
-<td>testCases.MobSliderTestcase@5d534f5d</td></tr>
+<td>testCases.MngLocationTestcase@5d534f5d</td></tr>
+<tr>
+<td title='testCases.MngDelvryBoyTestcase.chkBgColor()'><b>chkBgColor</b><br>Test class: testCases.MngDelvryBoyTestcase</td>
+<td></td>
+<td>4</td>
+<td>testCases.MngDelvryBoyTestcase@2e3967ea</td></tr>
+<tr>
+<td title='testCases.MngLocationTestcase.chkStatus()'><b>chkStatus</b><br>Test class: testCases.MngLocationTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.MngLocationTestcase@5d534f5d</td></tr>
+<tr>
+<td title='testCases.PushNotificationTestcase.chkBgColor()'><b>chkBgColor</b><br>Test class: testCases.PushNotificationTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.PushNotificationTestcase@51c668e3</td></tr>
+<tr>
+<td title='testCases.MngOrdersTestcase.chkElementsStatus()'><b>chkElementsStatus</b><br>Test class: testCases.MngOrdersTestcase<br>Parameters: Select</td>
+<td></td>
+<td>2</td>
+<td>testCases.MngOrdersTestcase@a38c7fe</td></tr>
+<tr>
+<td title='testCases.MngLocationTestcase.chkAddLocation()'><b>chkAddLocation</b><br>Test class: testCases.MngLocationTestcase</td>
+<td></td>
+<td>3</td>
+<td>testCases.MngLocationTestcase@5d534f5d</td></tr>
+<tr>
+<td title='testCases.MngExpenseTestcase.chkFileUpload()'><b>chkFileUpload</b><br>Test class: testCases.MngExpenseTestcase</td>
+<td></td>
+<td>17</td>
+<td>testCases.MngExpenseTestcase@70e9c95d</td></tr>
+<tr>
+<td title='testCases.LoginTestcase.verifyLoggedUsers1()'><b>verifyLoggedUsers1</b><br>Test class: testCases.LoginTestcase</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestcase@130c12b7</td></tr>
+<tr>
+<td title='testCases.MobSliderTestcase.chkImagePresent()'><b>chkImagePresent</b><br>Test class: testCases.MobSliderTestcase</td>
+<td></td>
+<td>17</td>
+<td>testCases.MobSliderTestcase@6fdbe764</td></tr>
+<tr>
+<td title='testCases.DashBoardTestCase.checkProfileName()'><b>checkProfileName</b><br>Test class: testCases.DashBoardTestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.DashBoardTestCase@4803b726</td></tr>
+<tr>
+<td title='testCases.MngOfferCodeTestcase.chkDelOffer()'><b>chkDelOffer</b><br>Test class: testCases.MngOfferCodeTestcase</td>
+<td></td>
+<td>4</td>
+<td>testCases.MngOfferCodeTestcase@4d5650ae</td></tr>
+<tr>
+<td title='testCases.AdminUsersTestcase.compUserTypes()'><b>compUserTypes</b><br>Test class: testCases.AdminUsersTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.AdminUsersTestcase@2e6a8155</td></tr>
+<tr>
+<td title='testCases.LoginTestcase.verifyCheckBox()'><b>verifyCheckBox</b><br>Test class: testCases.LoginTestcase</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestcase@130c12b7</td></tr>
+<tr>
+<td title='testCases.PushNotificationTestcase.chkText()'><b>chkText</b><br>Test class: testCases.PushNotificationTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.PushNotificationTestcase@51c668e3</td></tr>
+<tr>
+<td title='testCases.MobSliderTestcase.chkbgcolor()'><b>chkbgcolor</b><br>Test class: testCases.MobSliderTestcase</td>
+<td></td>
+<td>5</td>
+<td>testCases.MobSliderTestcase@6fdbe764</td></tr>
+<tr>
+<td title='testCases.MngLocationTestcase.getDelCharge()'><b>getDelCharge</b><br>Test class: testCases.MngLocationTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.MngLocationTestcase@5d534f5d</td></tr>
+<tr>
+<td title='testCases.DashBoardTestCase.checkEnableBar()'><b>checkEnableBar</b><br>Test class: testCases.DashBoardTestCase</td>
+<td></td>
+<td>1</td>
+<td>testCases.DashBoardTestCase@4803b726</td></tr>
+<tr>
+<td title='testCases.MngExpenseTestcase.chkCalendar()'><b>chkCalendar</b><br>Test class: testCases.MngExpenseTestcase</td>
+<td></td>
+<td>6</td>
+<td>testCases.MngExpenseTestcase@70e9c95d</td></tr>
+<tr>
+<td title='testCases.MngOrdersTestcase.chkSrchByPaymentMode()'><b>chkSrchByPaymentMode</b><br>Test class: testCases.MngOrdersTestcase</td>
+<td></td>
+<td>3</td>
+<td>testCases.MngOrdersTestcase@a38c7fe</td></tr>
+<tr>
+<td title='testCases.MngLocationTestcase.getBgColor()'><b>getBgColor</b><br>Test class: testCases.MngLocationTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.MngLocationTestcase@5d534f5d</td></tr>
 <tr>
 <td title='testCases.MngOfferCodeTestcase.chkUrlPage()'><b>chkUrlPage</b><br>Test class: testCases.MngOfferCodeTestcase</td>
 <td></td>
 <td>1</td>
-<td>testCases.MngOfferCodeTestcase@5e600dd5</td></tr>
+<td>testCases.MngOfferCodeTestcase@4d5650ae</td></tr>
 <tr>
-<td title='testCases.MobSliderTestcase.chkImagePresent()'><b>chkImagePresent</b><br>Test class: testCases.MobSliderTestcase</td>
+<td title='testCases.MngOfferCodeTestcase.chkAddOffer()'><b>chkAddOffer</b><br>Test class: testCases.MngOfferCodeTestcase</td>
 <td></td>
-<td>12</td>
-<td>testCases.MobSliderTestcase@5d534f5d</td></tr>
+<td>15</td>
+<td>testCases.MngOfferCodeTestcase@4d5650ae</td></tr>
 <tr>
-<td title='testCases.MngLocationTestcase.getBgColor()'><b>getBgColor</b><br>Test class: testCases.MngLocationTestcase</td>
+<td title='testCases.MngOfferCodeTestcase.chkupdateOffer()'><b>chkupdateOffer</b><br>Test class: testCases.MngOfferCodeTestcase</td>
+<td></td>
+<td>3</td>
+<td>testCases.MngOfferCodeTestcase@4d5650ae</td></tr>
+<tr>
+<td title='testCases.MngLocationTestcase.chkStateselected()'><b>chkStateselected</b><br>Test class: testCases.MngLocationTestcase</td>
+<td></td>
+<td>5</td>
+<td>testCases.MngLocationTestcase@5d534f5d</td></tr>
+<tr>
+<td title='testCases.MobSliderTestcase.chkStatus()'><b>chkStatus</b><br>Test class: testCases.MobSliderTestcase</td>
 <td></td>
 <td>2</td>
-<td>testCases.MngLocationTestcase@60bd273d</td></tr>
-<tr>
-<td title='testCases.LoginTestcase.verifyLoggedUsers()'><b>verifyLoggedUsers</b><br>Test class: testCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>testCases.LoginTestcase@5a45133e</td></tr>
+<td>testCases.MobSliderTestcase@6fdbe764</td></tr>
 <tr>
 <td title='testCases.PushNotificationTestcase.chkMsg()'><b>chkMsg</b><br>Test class: testCases.PushNotificationTestcase</td>
 <td></td>
-<td>3</td>
-<td>testCases.PushNotificationTestcase@2e3967ea</td></tr>
+<td>2</td>
+<td>testCases.PushNotificationTestcase@51c668e3</td></tr>
+<tr>
+<td title='testCases.MngOrdersTestcase.chkElementsStatus()'><b>chkElementsStatus</b><br>Test class: testCases.MngOrdersTestcase<br>Parameters: Out For Delivery</td>
+<td></td>
+<td>2</td>
+<td>testCases.MngOrdersTestcase@a38c7fe</td></tr>
+<tr>
+<td title='testCases.MngOrdersTestcase.chkElementsStatus()'><b>chkElementsStatus</b><br>Test class: testCases.MngOrdersTestcase<br>Parameters: Delivered</td>
+<td></td>
+<td>1</td>
+<td>testCases.MngOrdersTestcase@a38c7fe</td></tr>
 <tr>
 <td title='testCases.AdminUsersTestcase.validateUniqueUserName()'><b>validateUniqueUserName</b><br>Test class: testCases.AdminUsersTestcase</td>
 <td></td>
-<td>3</td>
-<td>testCases.AdminUsersTestcase@70e9c95d</td></tr>
-<tr>
-<td title='testCases.MngLocationTestcase.chkStatus()'><b>chkStatus</b><br>Test class: testCases.MngLocationTestcase</td>
-<td></td>
 <td>2</td>
-<td>testCases.MngLocationTestcase@60bd273d</td></tr>
+<td>testCases.AdminUsersTestcase@2e6a8155</td></tr>
+<tr>
+<td title='testCases.MngDelvryBoyTestcase.chkToolTip()'><b>chkToolTip</b><br>Test class: testCases.MngDelvryBoyTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.MngDelvryBoyTestcase@2e3967ea</td></tr>
+<tr>
+<td title='testCases.LoginTestcase.verifyLoggedUsers()'><b>verifyLoggedUsers</b><br>Test class: testCases.LoginTestcase</td>
+<td></td>
+<td>1</td>
+<td>testCases.LoginTestcase@130c12b7</td></tr>
+<tr>
+<td title='testCases.MobSliderTestcase.uploadBigImage()'><b>uploadBigImage</b><br>Test class: testCases.MobSliderTestcase</td>
+<td></td>
+<td>23</td>
+<td>testCases.MobSliderTestcase@6fdbe764</td></tr>
+<tr>
+<td title='testCases.LoginTestcase.verifyLoggedUsers()'><b>verifyLoggedUsers</b><br>Test class: testCases.LoginTestcase<br>Parameters: admin, admin</td>
+<td></td>
+<td>1</td>
+<td>testCases.LoginTestcase@130c12b7</td></tr>
 </table><p>
 </body>
 </html>

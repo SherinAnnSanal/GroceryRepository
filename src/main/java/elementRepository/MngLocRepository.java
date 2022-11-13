@@ -32,17 +32,42 @@ public class MngLocRepository {
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[3]")
 	WebElement stateTxt;
 	
-	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[11]/td[5]/a//span[@class='badge bg-success']")
+	 @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[5]/a//span[@class='badge bg-success']")
 	 WebElement statusBtn;
 	 
 	 @FindBy(xpath="//td[text()='Street20']//following-sibling::td[text()='United Kingdom']//following-sibling::td[text()='Craven Arms']//following-sibling::td[contains(text(),'100')]")
 	 WebElement txtCharge;
 
+	 @FindBy(css="a[class='btn btn-rounded btn-danger']")
+	 WebElement newBtn;
+	 
+	 @FindBy(id="country_id")
+	 WebElement dropdownCountry;
+	 
+	 @FindBy(id="st_id")
+	 WebElement dropdownState;
+	 
+	 @FindBy(id="location")
+	 WebElement txtLocation;
+	 
+	 @FindBy(id="delivery")
+	 WebElement txtDeliveryCharge;
+	 
+	 
+	 @FindBy(xpath="//button[@type='submit']")
+	 WebElement saveBtn;
+	 
+	 @FindBy(xpath="//div[contains(@class,'alert alert-success alert-dismissible')]")
+	 WebElement popupMsg;
+	 
+	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[6]/a[2]/i")
+	WebElement delLink;
+	 
+	 
 	public String getState() throws InterruptedException {
 		gu.getClickElement(mngLocMenu);
 		gu.getClickElement(editBtn);
 		gu.selectFuncbyVisibletext(editState, "Bristol");
-		System.out.println(gu.FirstSelectedOption(editState));
 		gu.getClickElement(updateBtn);
 		gu.mediumDelay(3000);
 		String stateText = gu.getElementText(stateTxt);
@@ -65,6 +90,26 @@ public class MngLocRepository {
 		{
 			gu.getClickElement(mngLocMenu);
 			return gu.getElementText(txtCharge);
+			
+		}
+		public boolean addLocation()
+		{
+			gu.getClickElement(mngLocMenu);
+			gu.getClickElement(newBtn);
+			gu.selectFuncbyindex(dropdownCountry, 1);
+			gu.selectFuncbyVisibletext(dropdownState, "Craven Arms");
+			gu.sendKey(txtLocation, "Street20");
+			gu.sendKey(txtDeliveryCharge, "100");
+			gu.getClickElement(saveBtn);
+			return gu.isDisplay(popupMsg);
+		}
+		
+		public boolean delLocation()
+		{
+			gu.getClickElement(mngLocMenu);
+			gu.getClickElement(delLink);
+			gu.alertHandlingaccept(driver);
+			return gu.isDisplay(popupMsg);
 			
 		}
 			

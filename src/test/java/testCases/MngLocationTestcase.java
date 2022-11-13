@@ -13,7 +13,7 @@ public class MngLocationTestcase extends BaseClass {
 	  
 	  MngLocRepository mL;
 	  
-  @Test
+  @Test(priority=5)
   public void chkStateselected() throws InterruptedException 
   {
 	  LoginPage lp=new LoginPage(driver);
@@ -26,7 +26,7 @@ public class MngLocationTestcase extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(priority=3)
   public void chkStatus()
   {
 	   lp=new LoginPage(driver);
@@ -37,7 +37,7 @@ public class MngLocationTestcase extends BaseClass {
 	 Assert.assertEquals(actual,expected,Constant.textErrorMsg);
 	  
   }
-  @Test
+  @Test(priority=2)
   public void getBgColor() {
 	  lp=new LoginPage(driver);
 	  lp.presteps();
@@ -49,7 +49,36 @@ public class MngLocationTestcase extends BaseClass {
 	  
   }
   
-  @Test
+	/*
+	 * @DataProvider(name="locationParameters") public object[][] location() {
+	 * return new object[][] {{"United Kingdom",""Street20","100"}} }
+	 */
+  @Test(priority=1)
+  public void chkAddLocation()
+  {
+	  lp=new LoginPage(driver);
+	  lp.presteps();
+	   mL=new MngLocRepository(driver);
+	   boolean actual=mL.addLocation();
+	   boolean expected= true;
+	   Assert.assertEquals(actual, expected,Constant.addError);
+	   
+  }
+  
+  @Test(priority=6)
+  public  void chkDelLocation()
+  {
+	  lp=new LoginPage(driver);
+	  lp.presteps();
+	   mL=new MngLocRepository(driver);
+	   boolean actual=mL.delLocation();
+	   boolean expected=true;
+	   Assert.assertEquals(actual, expected,Constant.delError);
+	   
+	   
+  }
+  
+  @Test(priority=4)
   public void getDelCharge() {
 	  lp=new LoginPage(driver);
 	  lp.presteps();

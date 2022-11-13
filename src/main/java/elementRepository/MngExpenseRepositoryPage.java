@@ -16,14 +16,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.FileHandling;
 import utilities.GeneralUtilities;
+import utilities.Synchronisation;
 
 public class MngExpenseRepositoryPage {
 
 	WebDriver driver;
 	public static Properties prop;
 	GeneralUtilities gu = new GeneralUtilities();
-	Robot rob;
+	FileHandling fh=new FileHandling();
+	Synchronisation sync=new Synchronisation();
 
 	// WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(20));
 	public MngExpenseRepositoryPage(WebDriver driver) {
@@ -88,25 +92,18 @@ public class MngExpenseRepositoryPage {
 	}
 
 	
-	  public void setDate() throws InterruptedException
-	  {
-	  gu.getClickElement(MngExpenseMenu);
-	  gu.getClickElement(MngExpenseOption); 
-	  gu.getClickElement(editBtn);
-	  //gu.getClickElement(dateTxtBox);
-	  System.out.println("near text box");
-	  dateTxtBox.clear();
-	  System.out.println("cleared");
-	  gu.sendKey(dateTxtBox, "21-09-2021");
-	  System.out.println("send key done");
-	  JavascriptExecutor js = (JavascriptExecutor) driver;
+	public void setDate() throws InterruptedException {
+		gu.getClickElement(MngExpenseMenu);
+		gu.getClickElement(MngExpenseOption);
+		gu.getClickElement(editBtn);
+		dateTxtBox.clear();
+		gu.sendKey(dateTxtBox, "21-09-2021");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
-
 		gu.mediumDelay(3000);
-
 		gu.getClickElement(updateBtn);
-	  
-}
+
+	}
 
 
 	public boolean fileUpload(String image) throws AWTException, IOException, InterruptedException {
@@ -114,34 +111,23 @@ public class MngExpenseRepositoryPage {
 		gu.getClickElement(MngExpenseMenu);
 		gu.getClickElement(MngExpenseOption);
 		gu.getClickElement(editBtn);
-		rob = new Robot();
+
 		gu.mediumDelay(3000);
 
 		WebElement click = driver.findElement(By.xpath("//*[@type='file']"));
-		Actions a = new Actions(driver);
-		a.moveToElement(click).click().perform();
+
 		gu.mediumDelay(3000);
+		fh.fileUpload(image, click, driver);
 
-		StringSelection ss = new StringSelection(image);
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		rob.delay(250);
-
-		rob.keyPress(KeyEvent.VK_CONTROL);
-		rob.keyPress(KeyEvent.VK_V);
-		rob.keyRelease(KeyEvent.VK_V);
-		rob.keyRelease(KeyEvent.VK_CONTROL);
-		rob.keyPress(KeyEvent.VK_ENTER);
-		rob.delay(250);
-		rob.keyRelease(KeyEvent.VK_ENTER);
 		gu.mediumDelay(1000);
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
 
-		gu.mediumDelay(3000);
-
+		//gu.mediumDelay(3000);
+		sync.clickElement(driver, "//button[@type='submit']");
 		gu.getClickElement(updateBtn);
-	
+
 		return gu.isDisplay(popupMsg);
 
 	}
