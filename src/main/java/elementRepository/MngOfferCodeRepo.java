@@ -17,12 +17,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilities.GeneralUtilities;
+import utilities.Synchronisation;
 
 public class MngOfferCodeRepo {
 	WebDriver driver;
 	GeneralUtilities gu = new GeneralUtilities();
 	Actions ac;
 	Properties prop;
+	Synchronisation sync=new Synchronisation();
 
 	public MngOfferCodeRepo(WebDriver driver) {
 		this.driver = driver;
@@ -102,8 +104,9 @@ public class MngOfferCodeRepo {
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("scroll(0, 250)"); // if the element is on bottom.
+		
 		jse.executeScript("arguments[0].click();", saveBtn);
-
+sync.Elementvisible(driver, "//div[@class='alert alert-success alert-dismissible']");
 		return gu.isDisplay(popupMsg);
 
 	}

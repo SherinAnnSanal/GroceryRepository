@@ -29,7 +29,7 @@ public class MngExpenseTestcase extends BaseClass {
 	 
 
 
-	// @Test
+	@Test
 	public void chkresetBtn() {
 		lp = new LoginPage(driver);
 		lp.presteps();
@@ -41,7 +41,7 @@ public class MngExpenseTestcase extends BaseClass {
 		Assert.assertEquals(actual, expected, Constant.bgColorErrorMsg);
 	}
 
-	// @Test
+ @Test
 	public void chkSearchBtn() {
 		lp = new LoginPage(driver);
 		lp.presteps();

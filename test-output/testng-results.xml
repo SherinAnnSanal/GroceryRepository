@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="38" passed="38" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-13T14:23:17 GST" name="My Testsuite" finished-at="2022-11-13T14:23:58 GST" duration-ms="41469">
+  <suite started-at="2022-11-14T17:40:02 GST" name="My Test Suite" finished-at="2022-11-14T17:52:13 GST" duration-ms="731093">
     <groups>
+      <group name="SmokeTest">
+        <method signature="DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" name="checkProfileName" class="testCases.DashBoardTestCase"/>
+        <method signature="LoginTestcase.verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@576d5deb]" name="verifyLoggedUsers1" class="testCases.LoginTestcase"/>
+      </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2022-11-13T14:23:17 GST" name="ChromeTest" finished-at="2022-11-13T14:23:58 GST" duration-ms="41469">
+    <test started-at="2022-11-14T17:40:02 GST" name="My Test" finished-at="2022-11-14T17:52:13 GST" duration-ms="731093">
       <class name="testCases.MngExpenseTestcase">
-        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@7e7be63f]" started-at="2022-11-13T14:23:17 GST" name="beforemethod" finished-at="2022-11-13T14:23:24 GST" duration-ms="7112" status="PASS">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:18 GST" name="beforemethod" finished-at="2022-11-14T17:45:23 GST" duration-ms="5292" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +22,93 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@7e7be63f]" started-at="2022-11-13T14:23:24 GST" name="chkFileUpload" finished-at="2022-11-13T14:23:42 GST" duration-ms="18104" status="PASS">
+        <test-method signature="chkCalendar()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:23 GST" name="chkCalendar" finished-at="2022-11-14T17:45:29 GST" duration-ms="6482" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chkFileUpload -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@7e7be63f]" started-at="2022-11-13T14:23:42 GST" name="aftermethod" finished-at="2022-11-13T14:23:58 GST" duration-ms="16209" status="PASS">
+        </test-method> <!-- chkCalendar -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:29 GST" name="aftermethod" finished-at="2022-11-14T17:45:30 GST" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chkFileUpload status=SUCCESS method=MngExpenseTestcase.chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@7e7be63f] output={null}]]]>
+                <![CDATA[[TestResult name=chkCalendar status=SUCCESS method=MngExpenseTestcase.chkCalendar()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:30 GST" name="beforemethod" finished-at="2022-11-14T17:45:35 GST" duration-ms="5279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:35 GST" name="chkFileUpload" finished-at="2022-11-14T17:45:48 GST" duration-ms="13028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkFileUpload -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:48 GST" name="aftermethod" finished-at="2022-11-14T17:45:48 GST" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkFileUpload status=SUCCESS method=MngExpenseTestcase.chkFileUpload()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:48 GST" name="beforemethod" finished-at="2022-11-14T17:45:53 GST" duration-ms="5299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkSearchBtn()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:53 GST" name="chkSearchBtn" finished-at="2022-11-14T17:45:55 GST" duration-ms="2023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkSearchBtn -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:45:55 GST" name="aftermethod" finished-at="2022-11-14T17:46:12 GST" duration-ms="16283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkSearchBtn status=SUCCESS method=MngExpenseTestcase.chkSearchBtn()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:46:12 GST" name="beforemethod" finished-at="2022-11-14T17:46:17 GST" duration-ms="5305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkresetBtn()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:46:17 GST" name="chkresetBtn" finished-at="2022-11-14T17:46:19 GST" duration-ms="2013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkresetBtn -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe]" started-at="2022-11-14T17:46:19 GST" name="aftermethod" finished-at="2022-11-14T17:46:35 GST" duration-ms="16253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkresetBtn status=SUCCESS method=MngExpenseTestcase.chkresetBtn()[pri:0, instance:testCases.MngExpenseTestcase@a38c7fe] output={null}]]]>
               </value>
             </param>
           </params>
@@ -34,6 +116,941 @@
           </reporter-output>
         </test-method> <!-- aftermethod -->
       </class> <!-- testCases.MngExpenseTestcase -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- My Testsuite -->
+      <class name="testCases.MngDelvryBoyTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:04 GST" name="beforemethod" finished-at="2022-11-14T17:44:10 GST" duration-ms="5384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkBgColor()[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:10 GST" name="chkBgColor" finished-at="2022-11-14T17:44:14 GST" duration-ms="4531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkBgColor -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:14 GST" name="aftermethod" finished-at="2022-11-14T17:44:31 GST" duration-ms="16272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkBgColor status=SUCCESS method=MngDelvryBoyTestcase.chkBgColor()[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:31 GST" name="beforemethod" finished-at="2022-11-14T17:44:36 GST" duration-ms="5289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkName()[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:36 GST" name="chkName" finished-at="2022-11-14T17:44:38 GST" duration-ms="1954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkName -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:38 GST" name="aftermethod" finished-at="2022-11-14T17:44:54 GST" duration-ms="16294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkName status=SUCCESS method=MngDelvryBoyTestcase.chkName()[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:54 GST" name="beforemethod" finished-at="2022-11-14T17:44:59 GST" duration-ms="5345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkToolTip()[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:44:59 GST" name="chkToolTip" finished-at="2022-11-14T17:45:01 GST" duration-ms="1882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkToolTip -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae]" started-at="2022-11-14T17:45:01 GST" name="aftermethod" finished-at="2022-11-14T17:45:18 GST" duration-ms="16289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkToolTip status=SUCCESS method=MngDelvryBoyTestcase.chkToolTip()[pri:0, instance:testCases.MngDelvryBoyTestcase@4d5650ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.MngDelvryBoyTestcase -->
+      <class name="testCases.LoginTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:40:57 GST" name="beforemethod" finished-at="2022-11-14T17:41:02 GST" duration-ms="5293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="verifyCheckBox()[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:02 GST" name="verifyCheckBox" finished-at="2022-11-14T17:41:02 GST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckBox -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:02 GST" name="aftermethod" finished-at="2022-11-14T17:41:18 GST" duration-ms="16239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckBox status=SUCCESS method=LoginTestcase.verifyCheckBox()[pri:0, instance:testCases.LoginTestcase@576d5deb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:18 GST" name="beforemethod" finished-at="2022-11-14T17:41:24 GST" duration-ms="5359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="verifyLoggedUsers()[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:24 GST" name="verifyLoggedUsers" finished-at="2022-11-14T17:41:25 GST" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedUsers -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:25 GST" name="aftermethod" finished-at="2022-11-14T17:41:26 GST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoggedUsers status=SUCCESS method=LoginTestcase.verifyLoggedUsers()[pri:0, instance:testCases.LoginTestcase@576d5deb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:26 GST" name="beforemethod" finished-at="2022-11-14T17:41:31 GST" duration-ms="5297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="verifyLoggedUsers(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:31 GST" name="verifyLoggedUsers" data-provider="data" finished-at="2022-11-14T17:41:32 GST" duration-ms="1196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedUsers -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:32 GST" name="aftermethod" finished-at="2022-11-14T17:41:32 GST" duration-ms="222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoggedUsers status=SUCCESS method=LoginTestcase.verifyLoggedUsers(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTestcase@576d5deb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:32 GST" name="beforemethod" finished-at="2022-11-14T17:41:38 GST" duration-ms="5345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:38 GST" name="verifyLoggedUsers1" finished-at="2022-11-14T17:41:38 GST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedUsers1 -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestcase@576d5deb]" started-at="2022-11-14T17:41:38 GST" name="aftermethod" finished-at="2022-11-14T17:41:54 GST" duration-ms="16273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoggedUsers1 status=SUCCESS method=LoginTestcase.verifyLoggedUsers1()[pri:0, instance:testCases.LoginTestcase@576d5deb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.LoginTestcase -->
+      <class name="testCases.MngLocationTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:41:54 GST" name="beforemethod" finished-at="2022-11-14T17:41:59 GST" duration-ms="5333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkAddLocation()[pri:1, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:41:59 GST" name="chkAddLocation" finished-at="2022-11-14T17:42:02 GST" duration-ms="3144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkAddLocation -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:02 GST" name="aftermethod" finished-at="2022-11-14T17:42:19 GST" duration-ms="16270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkAddLocation status=SUCCESS method=MngLocationTestcase.chkAddLocation()[pri:1, instance:testCases.MngLocationTestcase@70e9c95d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:19 GST" name="beforemethod" finished-at="2022-11-14T17:42:24 GST" duration-ms="5335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="getBgColor()[pri:2, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:24 GST" name="getBgColor" finished-at="2022-11-14T17:42:26 GST" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBgColor -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:26 GST" name="aftermethod" finished-at="2022-11-14T17:42:42 GST" duration-ms="16260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getBgColor status=SUCCESS method=MngLocationTestcase.getBgColor()[pri:2, instance:testCases.MngLocationTestcase@70e9c95d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:42 GST" name="beforemethod" finished-at="2022-11-14T17:42:47 GST" duration-ms="5349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkStatus()[pri:3, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:47 GST" name="chkStatus" finished-at="2022-11-14T17:42:49 GST" duration-ms="1594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkStatus -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:42:49 GST" name="aftermethod" finished-at="2022-11-14T17:43:05 GST" duration-ms="16241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkStatus status=SUCCESS method=MngLocationTestcase.chkStatus()[pri:3, instance:testCases.MngLocationTestcase@70e9c95d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:05 GST" name="beforemethod" finished-at="2022-11-14T17:43:10 GST" duration-ms="5305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="getDelCharge()[pri:4, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:10 GST" name="getDelCharge" finished-at="2022-11-14T17:43:13 GST" duration-ms="2269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDelCharge -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:13 GST" name="aftermethod" finished-at="2022-11-14T17:43:29 GST" duration-ms="16266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getDelCharge status=SUCCESS method=MngLocationTestcase.getDelCharge()[pri:4, instance:testCases.MngLocationTestcase@70e9c95d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:29 GST" name="beforemethod" finished-at="2022-11-14T17:43:34 GST" duration-ms="5409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkStateselected()[pri:5, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:34 GST" name="chkStateselected" finished-at="2022-11-14T17:43:40 GST" duration-ms="5912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkStateselected -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:40 GST" name="aftermethod" finished-at="2022-11-14T17:43:56 GST" duration-ms="16257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkStateselected status=SUCCESS method=MngLocationTestcase.chkStateselected()[pri:5, instance:testCases.MngLocationTestcase@70e9c95d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:43:56 GST" name="beforemethod" finished-at="2022-11-14T17:44:02 GST" duration-ms="5375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkDelLocation()[pri:6, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:44:02 GST" name="chkDelLocation" finished-at="2022-11-14T17:44:04 GST" duration-ms="2270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkDelLocation -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngLocationTestcase@70e9c95d]" started-at="2022-11-14T17:44:04 GST" name="aftermethod" finished-at="2022-11-14T17:44:04 GST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkDelLocation status=SUCCESS method=MngLocationTestcase.chkDelLocation()[pri:6, instance:testCases.MngLocationTestcase@70e9c95d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.MngLocationTestcase -->
+      <class name="testCases.MngOrdersTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:47:46 GST" name="beforemethod" finished-at="2022-11-14T17:47:51 GST" duration-ms="5396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:47:51 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-14T17:47:53 GST" duration-ms="1960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkElementsStatus -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:47:53 GST" name="aftermethod" finished-at="2022-11-14T17:47:53 GST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:47:53 GST" name="beforemethod" finished-at="2022-11-14T17:47:59 GST" duration-ms="5416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:47:59 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-14T17:48:01 GST" duration-ms="2019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Out For Delivery]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkElementsStatus -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:01 GST" name="aftermethod" finished-at="2022-11-14T17:48:17 GST" duration-ms="16246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:17 GST" name="beforemethod" finished-at="2022-11-14T17:48:22 GST" duration-ms="5311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:22 GST" name="chkElementsStatus" data-provider="data-provider" finished-at="2022-11-14T17:48:24 GST" duration-ms="2041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delivered]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkElementsStatus -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:24 GST" name="aftermethod" finished-at="2022-11-14T17:48:25 GST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkElementsStatus status=SUCCESS method=MngOrdersTestcase.chkElementsStatus(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:25 GST" name="beforemethod" finished-at="2022-11-14T17:48:30 GST" duration-ms="5425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkSrchByPaymentMode()[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:30 GST" name="chkSrchByPaymentMode" finished-at="2022-11-14T17:48:33 GST" duration-ms="2967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkSrchByPaymentMode -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOrdersTestcase@51c668e3]" started-at="2022-11-14T17:48:33 GST" name="aftermethod" finished-at="2022-11-14T17:48:49 GST" duration-ms="16282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkSrchByPaymentMode status=SUCCESS method=MngOrdersTestcase.chkSrchByPaymentMode()[pri:0, instance:testCases.MngOrdersTestcase@51c668e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.MngOrdersTestcase -->
+      <class name="testCases.PushNotificationTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:50:48 GST" name="beforemethod" finished-at="2022-11-14T17:50:53 GST" duration-ms="5430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkBgColor()[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:50:53 GST" name="chkBgColor" finished-at="2022-11-14T17:50:55 GST" duration-ms="1542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkBgColor -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:50:55 GST" name="aftermethod" finished-at="2022-11-14T17:50:55 GST" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkBgColor status=SUCCESS method=PushNotificationTestcase.chkBgColor()[pri:0, instance:testCases.PushNotificationTestcase@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:50:55 GST" name="beforemethod" finished-at="2022-11-14T17:51:00 GST" duration-ms="5363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkMsg()[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:51:00 GST" name="chkMsg" finished-at="2022-11-14T17:51:03 GST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkMsg -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:51:03 GST" name="aftermethod" finished-at="2022-11-14T17:51:19 GST" duration-ms="16263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkMsg status=SUCCESS method=PushNotificationTestcase.chkMsg()[pri:0, instance:testCases.PushNotificationTestcase@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:51:19 GST" name="beforemethod" finished-at="2022-11-14T17:51:24 GST" duration-ms="5323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkText()[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:51:24 GST" name="chkText" finished-at="2022-11-14T17:51:26 GST" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkText -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationTestcase@6221a451]" started-at="2022-11-14T17:51:26 GST" name="aftermethod" finished-at="2022-11-14T17:51:42 GST" duration-ms="16260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkText status=SUCCESS method=PushNotificationTestcase.chkText()[pri:0, instance:testCases.PushNotificationTestcase@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.PushNotificationTestcase -->
+      <class name="testCases.MngOfferCodeTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:46:35 GST" name="beforemethod" finished-at="2022-11-14T17:46:41 GST" duration-ms="5320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkAddOffer()[pri:1, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:46:41 GST" name="chkAddOffer" finished-at="2022-11-14T17:46:48 GST" duration-ms="7069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkAddOffer -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:46:48 GST" name="aftermethod" finished-at="2022-11-14T17:47:04 GST" duration-ms="16237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkAddOffer status=SUCCESS method=MngOfferCodeTestcase.chkAddOffer()[pri:1, instance:testCases.MngOfferCodeTestcase@6fdbe764] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:04 GST" name="beforemethod" finished-at="2022-11-14T17:47:09 GST" duration-ms="5402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkupdateOffer()[pri:2, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:09 GST" name="chkupdateOffer" finished-at="2022-11-14T17:47:12 GST" duration-ms="3171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkupdateOffer -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:12 GST" name="aftermethod" finished-at="2022-11-14T17:47:29 GST" duration-ms="16247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkupdateOffer status=SUCCESS method=MngOfferCodeTestcase.chkupdateOffer()[pri:2, instance:testCases.MngOfferCodeTestcase@6fdbe764] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:29 GST" name="beforemethod" finished-at="2022-11-14T17:47:34 GST" duration-ms="5293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkDelOffer()[pri:3, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:34 GST" name="chkDelOffer" finished-at="2022-11-14T17:47:39 GST" duration-ms="4899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkDelOffer -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:39 GST" name="aftermethod" finished-at="2022-11-14T17:47:39 GST" duration-ms="206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkDelOffer status=SUCCESS method=MngOfferCodeTestcase.chkDelOffer()[pri:3, instance:testCases.MngOfferCodeTestcase@6fdbe764] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:39 GST" name="beforemethod" finished-at="2022-11-14T17:47:44 GST" duration-ms="5292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkUrlPage()[pri:4, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:44 GST" name="chkUrlPage" finished-at="2022-11-14T17:47:46 GST" duration-ms="1190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkUrlPage -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MngOfferCodeTestcase@6fdbe764]" started-at="2022-11-14T17:47:46 GST" name="aftermethod" finished-at="2022-11-14T17:47:46 GST" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkUrlPage status=SUCCESS method=MngOfferCodeTestcase.chkUrlPage()[pri:4, instance:testCases.MngOfferCodeTestcase@6fdbe764] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.MngOfferCodeTestcase -->
+      <class name="testCases.AdminUsersTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.AdminUsersTestcase@52719fb6]" started-at="2022-11-14T17:51:42 GST" name="beforemethod" finished-at="2022-11-14T17:51:48 GST" duration-ms="5288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="compUserTypes()[pri:0, instance:testCases.AdminUsersTestcase@52719fb6]" started-at="2022-11-14T17:51:48 GST" name="compUserTypes" finished-at="2022-11-14T17:51:49 GST" duration-ms="1649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compUserTypes -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUsersTestcase@52719fb6]" started-at="2022-11-14T17:51:49 GST" name="aftermethod" finished-at="2022-11-14T17:51:49 GST" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=compUserTypes status=SUCCESS method=AdminUsersTestcase.compUserTypes()[pri:0, instance:testCases.AdminUsersTestcase@52719fb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.AdminUsersTestcase@52719fb6]" started-at="2022-11-14T17:51:49 GST" name="beforemethod" finished-at="2022-11-14T17:51:55 GST" duration-ms="5349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="validateUniqueUserName()[pri:0, instance:testCases.AdminUsersTestcase@52719fb6]" started-at="2022-11-14T17:51:55 GST" name="validateUniqueUserName" finished-at="2022-11-14T17:51:57 GST" duration-ms="2169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUniqueUserName -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUsersTestcase@52719fb6]" started-at="2022-11-14T17:51:57 GST" name="aftermethod" finished-at="2022-11-14T17:52:13 GST" duration-ms="16269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUniqueUserName status=SUCCESS method=AdminUsersTestcase.validateUniqueUserName()[pri:0, instance:testCases.AdminUsersTestcase@52719fb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.AdminUsersTestcase -->
+      <class name="testCases.DashBoardTestCase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:02 GST" name="beforemethod" finished-at="2022-11-14T17:40:09 GST" duration-ms="6461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:09 GST" name="checkColorHomeBtn" finished-at="2022-11-14T17:40:10 GST" duration-ms="1370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkColorHomeBtn -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:10 GST" name="aftermethod" finished-at="2022-11-14T17:40:27 GST" duration-ms="16269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkColorHomeBtn status=SUCCESS method=DashBoardTestCase.checkColorHomeBtn()[pri:0, instance:testCases.DashBoardTestCase@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:27 GST" name="beforemethod" finished-at="2022-11-14T17:40:32 GST" duration-ms="5806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:32 GST" name="checkEnableBar" finished-at="2022-11-14T17:40:34 GST" duration-ms="1224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnableBar -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:34 GST" name="aftermethod" finished-at="2022-11-14T17:40:50 GST" duration-ms="16260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkEnableBar status=SUCCESS method=DashBoardTestCase.checkEnableBar()[pri:0, instance:testCases.DashBoardTestCase@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:50 GST" name="beforemethod" finished-at="2022-11-14T17:40:55 GST" duration-ms="5334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:55 GST" name="checkProfileName" finished-at="2022-11-14T17:40:56 GST" duration-ms="1226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkProfileName -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.DashBoardTestCase@53ce1329]" started-at="2022-11-14T17:40:56 GST" name="aftermethod" finished-at="2022-11-14T17:40:57 GST" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkProfileName status=SUCCESS method=DashBoardTestCase.checkProfileName()[pri:0, instance:testCases.DashBoardTestCase@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.DashBoardTestCase -->
+      <class name="testCases.MobSliderTestcase">
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:48:49 GST" name="beforemethod" finished-at="2022-11-14T17:48:55 GST" duration-ms="5686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkImagePresent()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:48:55 GST" name="chkImagePresent" finished-at="2022-11-14T17:49:05 GST" duration-ms="10412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkImagePresent -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:05 GST" name="aftermethod" finished-at="2022-11-14T17:49:06 GST" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkImagePresent status=SUCCESS method=MobSliderTestcase.chkImagePresent()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:06 GST" name="beforemethod" finished-at="2022-11-14T17:49:11 GST" duration-ms="5304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkStatus()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:11 GST" name="chkStatus" finished-at="2022-11-14T17:49:13 GST" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkStatus -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:13 GST" name="aftermethod" finished-at="2022-11-14T17:49:30 GST" duration-ms="16265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkStatus status=SUCCESS method=MobSliderTestcase.chkStatus()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:30 GST" name="beforemethod" finished-at="2022-11-14T17:49:35 GST" duration-ms="5474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkTitle()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:35 GST" name="chkTitle" finished-at="2022-11-14T17:49:37 GST" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkTitle -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:37 GST" name="aftermethod" finished-at="2022-11-14T17:49:53 GST" duration-ms="16265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkTitle status=SUCCESS method=MobSliderTestcase.chkTitle()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:53 GST" name="beforemethod" finished-at="2022-11-14T17:49:59 GST" duration-ms="5310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="chkbgcolor()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:49:59 GST" name="chkbgcolor" finished-at="2022-11-14T17:50:04 GST" duration-ms="4921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkbgcolor -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:50:04 GST" name="aftermethod" finished-at="2022-11-14T17:50:20 GST" duration-ms="16248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chkbgcolor status=SUCCESS method=MobSliderTestcase.chkbgcolor()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod(java.lang.String)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:50:20 GST" name="beforemethod" finished-at="2022-11-14T17:50:25 GST" duration-ms="5280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="uploadBigImage()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:50:25 GST" name="uploadBigImage" finished-at="2022-11-14T17:50:48 GST" duration-ms="22469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadBigImage -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:testCases.MobSliderTestcase@2e6a8155]" started-at="2022-11-14T17:50:48 GST" name="aftermethod" finished-at="2022-11-14T17:50:48 GST" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadBigImage status=SUCCESS method=MobSliderTestcase.uploadBigImage()[pri:0, instance:testCases.MobSliderTestcase@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- testCases.MobSliderTestcase -->
+    </test> <!-- My Test -->
+  </suite> <!-- My Test Suite -->
 </testng-results>

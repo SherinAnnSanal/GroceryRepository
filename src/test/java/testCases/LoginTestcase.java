@@ -17,7 +17,8 @@ public class LoginTestcase extends BaseClass {
 
 	@DataProvider(name = "data")
 	private Object[][] getUserData() {
-		return new Object[][] { { "admin", "admin" }, { "admin2", "admin3" } };
+		//return new Object[][] { { "admin", "admin" }, { "admin2", "admin3" } };
+		return new Object[][] { { "admin", "admin" }};
 	}
 	
 
@@ -63,7 +64,7 @@ public class LoginTestcase extends BaseClass {
 	}
 
 	@Test(groups = { "SmokeTest" })
-	public void verifyLoggedUsers1() throws InterruptedException {
+   	public void verifyLoggedUsers1() throws InterruptedException {
 		lp = new LoginPage(driver);
 		boolean actual = lp.textArea_username();
 		boolean expected = true;

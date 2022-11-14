@@ -8,8 +8,8 @@
 			
 			<methods>
 			<include name="chkFileUpload"/>
-			</methods>
-			
+</methods>			
+		
 			</class>
 		</classes>
 		

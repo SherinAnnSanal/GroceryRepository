@@ -15,7 +15,6 @@
 			<class name="testCases.PushNotificationTestcase"/>
 			<class name="testCases.AdminUsersTestcase"/>
 			
-			
 		
 		</classes>
 		
